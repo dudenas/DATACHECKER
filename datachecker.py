@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore", 'This pattern is interpreted as a regular expr
 
 # Add complete filepath here.
 filepath = sys.argv[1] if len(sys.argv) > 1 else ''
-filepath = "datasets/AusLCIConstruction_MVP02_EF_20240514.csv"
+# filepath = "datasets/AusLCIConstruction_MVP02_EF_20240514.csv"
 zip = sys.argv[2].lower() == 'true' if len(sys.argv) > 2 else False
 
 filename = Path(filepath).stem

@@ -14,5 +14,5 @@ Command | Comment
 
 
 ```shell
-sh datachecker_run.sh -f filepath -zip
+sh datachecker_run.sh -f filepath -zip -r
 ```

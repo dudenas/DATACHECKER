@@ -1,9 +1,11 @@
+### jupyter notebook -> python
 To convert a jupyter notebook to running python code, run a command
 
 ```shell
 jupyter nbconvert --to python dataset_analysis_concat-240604.ipynb --output datachecker.py
 ```
 
+### run datachecker in teminal
 To run a comman script pass a command
 
 Command | Comment
@@ -17,7 +19,7 @@ Command | Comment
 sh datachecker_run.sh -f filepath -zip -r
 ```
 
-Example output
+### Example output
 
 | Name                    | Value |
 |-------------------------|-------|

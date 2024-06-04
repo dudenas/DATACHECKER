@@ -1,0 +1,7 @@
+pandas
+IPython
+ipyfilechooser
+tqdm
+numpy
+prettytable
+tabulate

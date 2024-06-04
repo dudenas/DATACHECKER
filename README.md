@@ -1,3 +1,8 @@
+### requirements
+```shell
+pip install -r requirements.txt
+```
+
 ### jupyter notebook -> python
 To convert a jupyter notebook to running python code, run a command
 

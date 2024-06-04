@@ -19,9 +19,8 @@ sh datachecker_run.sh -f filepath -zip -r
 
 Example output
 
-+-------------------------+-------+
 | Name                    | Value |
-+-------------------------+-------+
+|-------------------------|-------|
 | Duplication             | PASS  |
 | Non_discerning_info     | PASS  |
 | Missing_value_mandatory | PASS  |
@@ -33,4 +32,3 @@ Example output
 | Formatting_3            | PASS  |
 | Formatting_4            | PASS  |
 | Formatting_5            | PASS  |
-+-------------------------+-------+

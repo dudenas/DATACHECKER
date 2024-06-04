@@ -8,8 +8,9 @@ To run a comman script pass a command
 
 Command | Comment
 --- | ---
-**-f** | filepath should be changed to the filepath of the file
-**-zip** | is optional, if passed will zip the report
+**-f** | filepath: The path to the file to be checked."
+**-zip** | Optional argument. Pass to enable zip."
+**-r** | Optional argument. Pass to prevent removal of the directory."
 
 
 ```shell

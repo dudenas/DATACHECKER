@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[5]:
 
 
 import shutil
@@ -29,15 +29,15 @@ warnings.filterwarnings("ignore", 'This pattern has match groups')
 warnings.filterwarnings("ignore", 'This pattern is interpreted as a regular expression, and has match groups')
 
 # Add complete filepath here.
-filepath = sys.argv[1] if len(sys.argv) > 1 else ''
-# filepath = "datasets/AusLCIConstruction_MVP02_EF_20240514.csv"
+# filepath = sys.argv[1] if len(sys.argv) > 1 else ''
+filepath = "/Users/kazkas/Downloads/AusLCIConstruction_MVP02_EF_20240514.csv"
 zip = sys.argv[2].lower() == 'true' if len(sys.argv) > 2 else False
 
 filename = Path(filepath).stem
 folder_to_download = filename  # Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
 
 
-# In[20]:
+# In[6]:
 
 
 # Open the JSON file and load columns into variables
@@ -48,7 +48,7 @@ with open("columns.json", 'r') as json_file:
     non_discerning_columns = data["non_discerning_columns"]
 
 
-# In[21]:
+# In[27]:
 
 
 # change if there is an error reading csv or it is strangely formatted
@@ -92,8 +92,10 @@ if not os.path.exists(f"{FOLDER_PATH}/OTHER"):
 # PRINT TABLE
 MASTER_TABLE = ""
 CMD_TABLE= []
-def add_to_cmd_table(name, value):
+def add_to_cmd_table(name, value, mandatory=False):
     global CMD_TABLE
+    if mandatory:
+        value = "\033[1;31;40m" + value + "\033[0m"
     CMD_TABLE.append([name, value])
 
 def print_table(table, horizontal, column_headers = []):
@@ -129,7 +131,7 @@ MASTER_TABLE += "-\n"
 # print(len(df.columns))
 
 
-# In[22]:
+# In[ ]:
 
 
 # check whether existing columns are in the same names as universal tabular columns
@@ -145,7 +147,7 @@ for index, item in enumerate(universal_tabular_columns):
         df[item] = pd.Series(dtype='object')
 
 
-# In[23]:
+# In[29]:
 
 
 def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
@@ -181,7 +183,7 @@ def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
         MASTER_TABLE += "-\n"
         add_to_cmd_table(analyse_name, "PASS")
         return
-    add_to_cmd_table(analyse_name, "FIX")
+    add_to_cmd_table(analyse_name, "FIX", True)
     
     table = [table_text, [df_instance_count, df_range_count, df_range_percent]]
     print_table(table, True)
@@ -219,7 +221,7 @@ table_text = ['Number of instances', 'Number of records that indiscernable', '% 
 duplicates_non_discerning(df, non_discerning_columns, table_text, "Non_discerning_info")
 
 
-# In[25]:
+# In[30]:
 
 
 def missing_value(dataFrame):
@@ -268,7 +270,7 @@ def missing_value(dataFrame):
     else:
         table = [missing_value_table.index.tolist(), missing_value_values]
         print_table(table, False, ["Column", "Count"])
-        add_to_cmd_table("Missing_value_mandatory", "FIX")
+        add_to_cmd_table("Missing_value_mandatory", "FIX", True)
 
         # go trough each column in the dataFrame and check which columns misses somve values. If it does, save the document
         for col_name, val in missing_value_table.items():
@@ -303,7 +305,7 @@ def missing_value(dataFrame):
 missing_value(df)
 
 
-# In[26]:
+# In[31]:
 
 
 def repetition(dataFrame, df_columns, table_text, analyse_name):
@@ -405,7 +407,7 @@ except:
     pass
 
 
-# In[27]:
+# In[32]:
 
 
 def format_1(dataFrame, df_columns, analyse_name):
@@ -449,7 +451,7 @@ def format_1(dataFrame, df_columns, analyse_name):
         add_to_cmd_table(analyse_name, "PASS")
         return
     
-    add_to_cmd_table(analyse_name, "FIX")
+    add_to_cmd_table(analyse_name, "FIX", True)
     
     table = [["% of rows where the Region/Regional Scope column items is without capitalization"],[df_percent]]
     print_table(table, True)
@@ -473,7 +475,7 @@ else:
     
 
 
-# In[28]:
+# In[33]:
 
 
 def format_2(dataFrame, df_columns, analyse_name):
@@ -511,7 +513,7 @@ def format_2(dataFrame, df_columns, analyse_name):
         add_to_cmd_table(analyse_name, "PASS")
         return
     
-    add_to_cmd_table(analyse_name, "FIX")
+    add_to_cmd_table(analyse_name, "FIX", True)
 
     table = [["% of rows where the Value column does items not contain a number"],[df_percent]]
     print_table(table, True)
@@ -524,7 +526,7 @@ def format_2(dataFrame, df_columns, analyse_name):
 format_2(df, ["Value"], "Formatting_2")
 
 
-# In[29]:
+# In[34]:
 
 
 def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_text):
@@ -575,7 +577,10 @@ def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_t
         add_to_cmd_table(analyse_name, "PASS")
         return
     
-    add_to_cmd_table(analyse_name, "FIX")
+    if analyse_name == "Formatting_5":
+        add_to_cmd_table(analyse_name, "FIX", True)
+    else:
+        add_to_cmd_table(analyse_name, "FIX")
     
     table = [df_local.columns.tolist(), output_percentages, output_count]
     print_table(table, False, ["Column", "Percentage", "Count"])
@@ -593,7 +598,7 @@ description_text = "% of rows with a question mark in any column & count"
 format_all_columns(df, df.columns, regex, "Formatting_5",description_text)
 
 
-# In[30]:
+# In[35]:
 
 
 def save_table ():
@@ -604,7 +609,7 @@ def save_table ():
 save_table()
 
 
-# In[31]:
+# In[36]:
 
 
 def split_files(directory):
@@ -634,7 +639,7 @@ def split_files(directory):
 split_files(FOLDER_PATH)
 
 
-# In[32]:
+# In[37]:
 
 
 # Only make an archive if zip is True
@@ -644,7 +649,7 @@ if zip:
     FileLink(filelink)
 
 
-# In[ ]:
+# In[38]:
 
 
 # Column headers

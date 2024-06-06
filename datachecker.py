@@ -22,6 +22,7 @@ from prettytable import PrettyTable
 from pathlib import Path
 
 import json
+import csv 
 
 # ignore group warnings
 import warnings
@@ -54,7 +55,8 @@ with open("columns.json", 'r') as json_file:
 # change if there is an error reading csv or it is strangely formatted
 # df = pd.read_csv(filepath, on_bad_lines='skip')
 # df = pd.read_csv(filepath)
-df = pd.read_csv(filepath, engine="python", encoding='utf-8', on_bad_lines='warn')
+# df = pd.read_csv(filepath, engine="python", encoding='utf-8', on_bad_lines='skip')
+df = pd.read_csv(filepath, engine="python", encoding='utf-8', quoting=csv.QUOTE_NONE)
 # df = pd.read_csv(filepath, sep='delimiter', header=None)
 
 # add index to match the csv

@@ -22,12 +22,13 @@ from prettytable import PrettyTable
 from pathlib import Path
 
 import json
-import csv 
+import csv
 
 # ignore group warnings
 import warnings
 warnings.filterwarnings("ignore", 'This pattern has match groups')
-warnings.filterwarnings("ignore", 'This pattern is interpreted as a regular expression, and has match groups')
+warnings.filterwarnings(
+    "ignore", 'This pattern is interpreted as a regular expression, and has match groups')
 
 # Add complete filepath here.
 filepath = sys.argv[1] if len(sys.argv) > 1 else ''
@@ -35,7 +36,8 @@ filepath = sys.argv[1] if len(sys.argv) > 1 else ''
 zip = sys.argv[2].lower() == 'true' if len(sys.argv) > 2 else False
 
 filename = Path(filepath).stem
-folder_to_download = filename  # Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
+# Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
+folder_to_download = filename
 
 
 # In[14]:
@@ -56,7 +58,8 @@ with open("columns.json", 'r') as json_file:
 # df = pd.read_csv(filepath, on_bad_lines='skip')
 # df = pd.read_csv(filepath)
 # df = pd.read_csv(filepath, engine="python", encoding='utf-8', on_bad_lines='skip')
-df = pd.read_csv(filepath, engine="python", encoding='utf-8', quoting=csv.QUOTE_NONE)
+df = pd.read_csv(filepath, engine="python",
+                 encoding='utf-8', quoting=csv.QUOTE_NONE)
 # df = pd.read_csv(filepath, sep='delimiter', header=None)
 
 # add index to match the csv
@@ -72,7 +75,7 @@ CURRENT_DATE = today.strftime("%Y%m%d")
 
 # CREATE FOLDERS
 # create a folder for each document
-FOLDER_NAME = re.sub("[^A-Z0-9]", " ", filename,0,re.IGNORECASE)
+FOLDER_NAME = re.sub("[^A-Z0-9]", " ", filename, 0, re.IGNORECASE)
 FOLDER_NAME = re.sub(' +', '_', FOLDER_NAME)
 
 FOLDER_PATH = os.path.join(os.getcwd(), FOLDER_NAME)
@@ -94,14 +97,17 @@ if not os.path.exists(f"{FOLDER_PATH}/OTHER"):
 
 # PRINT TABLE
 MASTER_TABLE = ""
-CMD_TABLE= []
+CMD_TABLE = []
+
+
 def add_to_cmd_table(name, value, mandatory=False):
     global CMD_TABLE
     if mandatory:
         value = "\033[1;31;40m" + value + "\033[0m"
     CMD_TABLE.append([name, value])
 
-def print_table(table, horizontal, column_headers = []):
+
+def print_table(table, horizontal, column_headers=[]):
     global MASTER_TABLE
     tab = None
     if horizontal:
@@ -125,6 +131,7 @@ def print_table(table, horizontal, column_headers = []):
 # df.dropna(how='all',thresh=1, inplace=True)
 # print(df.shape[0])
 
+
 MASTER_TABLE += "Total data points\n"
 MASTER_TABLE += f"{df.shape[0]}\n"
 MASTER_TABLE += "-\n"
@@ -142,7 +149,7 @@ for index, item in enumerate(df.columns):
     if item not in universal_tabular_columns:
         print(f'this is not the right name : {item}')
 
-# add missing columns 
+# add missing columns
 for index, item in enumerate(universal_tabular_columns):
     if item not in df.columns:
         print(f'the column was added : {item}')
@@ -164,7 +171,7 @@ def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
 
     # total dataframe count
     df_count = dataFrame.shape[0]
-    
+
     # Number of instances
     df_instance_count = df_range.shape[0]
 
@@ -187,20 +194,22 @@ def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
         add_to_cmd_table(analyse_name, "PASS")
         return
     add_to_cmd_table(analyse_name, "FIX", True)
-    
+
     table = [table_text, [df_instance_count, df_range_count, df_range_percent]]
     print_table(table, True)
 
     # SAVE FILES
     # save - Rows that are duplicated - OUTPUT 1
     df_range_full_table = dataFrame.loc[df_range.index]
-    df_range_full_table.to_csv(f'{FOLDER_PATH}/OTHER/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
-    
+    df_range_full_table.to_csv(
+        f'{FOLDER_PATH}/OTHER/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
+
     # print(f"Saved — {analyse_name}-Report-Output_1")
 
     # save - Duplicate instances & number of each - OUTPUT 2
     # count the duplicates
-    df_range_group = df_range.groupby(df_range.columns.tolist(),as_index=False, dropna=False, sort=True).size()
+    df_range_group = df_range.groupby(
+        df_range.columns.tolist(), as_index=False, dropna=False, sort=True).size()
     # add count to begining
     df_range_group.insert(0, "count", df_range_group["size"])
     # remove size at the end
@@ -210,18 +219,23 @@ def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
     # reset index
     df_range_group = df_range_group.reset_index(drop=True)
     # save
-    df_range_group.to_csv(f'{FOLDER_PATH}/OTHER/Report-{analyse_name}-Output_2-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+    df_range_group.to_csv(
+        f'{FOLDER_PATH}/OTHER/Report-{analyse_name}-Output_2-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
+
 
 # DUPLICATES
-table_text = ['Number of instances', 'Number of records that would be removed', '% of total data affected (copies/total)']
+table_text = ['Number of instances', 'Number of records that would be removed',
+              '% of total data affected (copies/total)']
 duplicates_non_discerning(df, df.columns, table_text, "Duplication")
 
 # drop duplicates
 df = df.drop_duplicates()
 
 # NON DISCERNING-INFO
-table_text = ['Number of instances', 'Number of records that indiscernable', '% of rows of the total data affected (copies/total)']
-duplicates_non_discerning(df, non_discerning_columns, table_text, "Non_discerning_info")
+table_text = ['Number of instances', 'Number of records that indiscernable',
+              '% of rows of the total data affected (copies/total)']
+duplicates_non_discerning(df, non_discerning_columns,
+                          table_text, "Non_discerning_info")
 
 
 # In[8]:
@@ -242,24 +256,25 @@ def missing_value(dataFrame):
             elif i == df_count:
                 val = "---"
             mvv_changed.append(val)
-                
+
         return mvv_changed
 
-    df_mandatory_ef_columns = ["Name", "Value", "Unit"] # Emission Factors
-    df_mandatory_c_columns = ["Name", "Components"] # Compositions
+    df_mandatory_ef_columns = ["Name", "Value", "Unit"]  # Emission Factors
+    df_mandatory_c_columns = ["Name", "Components"]  # Compositions
 
     # check whether it is emmission factor or composition
     if dataFrame["Value"].isna().sum() == df_count:
-        df_mandatory_columns= df_mandatory_c_columns
+        df_mandatory_columns = df_mandatory_c_columns
     else:
-        df_mandatory_columns= df_mandatory_ef_columns
-    df_optional = dataFrame.drop(columns = df_mandatory_columns) # mandatory dataframe
-    df_mandatory = dataFrame[df_mandatory_columns] # mandatory dataframe
-    
+        df_mandatory_columns = df_mandatory_ef_columns
+    df_optional = dataFrame.drop(
+        columns=df_mandatory_columns)  # mandatory dataframe
+    df_mandatory = dataFrame[df_mandatory_columns]  # mandatory dataframe
+
     # MANDATORY
     missing_value_table = df_mandatory.isna().sum()
     missing_value_values = change_missing_values(missing_value_table.tolist())
-    
+
     # save misisng value table
     MASTER_TABLE += f"Missing_value_mandatory\n"
 
@@ -278,16 +293,16 @@ def missing_value(dataFrame):
         # go trough each column in the dataFrame and check which columns misses somve values. If it does, save the document
         for col_name, val in missing_value_table.items():
             if val != dataFrame.shape[0] and val != 0:
-                cn = re.sub("[^A-Z]", " ", col_name,0,re.IGNORECASE)
+                cn = re.sub("[^A-Z]", " ", col_name, 0, re.IGNORECASE)
                 cn = re.sub(' +', '_', cn)
                 fname = f'{FOLDER_PATH}/OTHER/Report-Missing_value_mandatory-{cn}-Output_1-{filename}-{CURRENT_DATE}.csv'
                 df_isna = dataFrame[dataFrame[col_name].isna()]
-                df_isna.to_csv(fname,encoding='utf-8')
-    
+                df_isna.to_csv(fname, encoding='utf-8')
+
     # OPTIONAL
     missing_value_table = df_optional.isna().sum()
     missing_value_values = change_missing_values(missing_value_table.tolist())
-    
+
     # save misisng value table
     MASTER_TABLE += f"Missing_value_optional\n"
 
@@ -298,11 +313,11 @@ def missing_value(dataFrame):
     # go trough each column in the dataFrame and check which columns misses somve values. If it does, save the document
     for col_name, val in missing_value_table.items():
         if val != dataFrame.shape[0] and val != 0:
-            cn = re.sub("[^A-Z]", " ", col_name,0,re.IGNORECASE)
+            cn = re.sub("[^A-Z]", " ", col_name, 0, re.IGNORECASE)
             cn = re.sub(' +', '_', cn)
             fname = f'{FOLDER_PATH}/OTHER/Report-Missing_value_optional-{cn}-Output_1-{filename}-{CURRENT_DATE}.csv'
             df_isna = dataFrame[dataFrame[col_name].isna()]
-            df_isna.to_csv(fname,encoding='utf-8')
+            df_isna.to_csv(fname, encoding='utf-8')
 
 
 missing_value(df)
@@ -324,13 +339,14 @@ def repetition(dataFrame, df_columns, table_text, analyse_name):
     df_count = dataFrame.shape[0]
 
     # count the duplicates
-    df_range_group = df_range.groupby(df_range.columns.tolist(),as_index=False, dropna=False, sort=True).size()
+    df_range_group = df_range.groupby(
+        df_range.columns.tolist(), as_index=False, dropna=False, sort=True).size()
     # sort values by count
     df_range_group = df_range_group.sort_values(by="size", ascending=False)
     # reset index
     df_range_group = df_range_group.reset_index(drop=True)
 
-    # print 
+    # print
     MASTER_TABLE += f"{analyse_name}\n"
     MASTER_TABLE += f"{table_text}\n"
 
@@ -342,11 +358,11 @@ def repetition(dataFrame, df_columns, table_text, analyse_name):
         MASTER_TABLE += "-\n"
         add_to_cmd_table(analyse_name, "PASS")
         return
-    
+
     add_to_cmd_table(analyse_name, "FIX")
 
     # go trough the range and add it to the list
-    df_range_vals = [2,5,10,25,50,100,1000,10000]
+    df_range_vals = [2, 5, 10, 25, 50, 100, 1000, 10000]
     df_total = []
     df_instances = []
     df_percent = []
@@ -360,18 +376,20 @@ def repetition(dataFrame, df_columns, table_text, analyse_name):
         df_instances.append(partition_of_data_instances)
         df_percent.append(partition_of_data_percent)
 
-    table = [df_range_vals,df_total,df_instances,df_percent]
-    print_table(table, False, ["more or equal to copies ", "data affected", "instance count", "percent"])
-
+    table = [df_range_vals, df_total, df_instances, df_percent]
+    print_table(table, False, ["more or equal to copies ",
+                "data affected", "instance count", "percent"])
 
     # SAVE FILES
     # save - Rows that are duplicated - OUTPUT 1
     df_range_full_table = dataFrame.loc[df_range.index]
-    df_range_full_table.to_csv(f'{FOLDER_PATH}/REPETITION/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+    df_range_full_table.to_csv(
+        f'{FOLDER_PATH}/REPETITION/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
 
     # save - Duplicate instances & number of each - OUTPUT 2
     # count the duplicates
-    df_range_group = df_range.groupby(df_range.columns.tolist(),as_index=False, dropna=False, sort=True).size()
+    df_range_group = df_range.groupby(
+        df_range.columns.tolist(), as_index=False, dropna=False, sort=True).size()
     # add count to begining
     df_range_group.insert(0, "count", df_range_group["size"])
     # remove size at the end
@@ -381,7 +399,9 @@ def repetition(dataFrame, df_columns, table_text, analyse_name):
     # reset index
     df_range_group = df_range_group.reset_index(drop=True)
     # save
-    df_range_group.to_csv(f'{FOLDER_PATH}/REPETITION/Report-{analyse_name}-Output_2-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+    df_range_group.to_csv(
+        f'{FOLDER_PATH}/REPETITION/Report-{analyse_name}-Output_2-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
+
 
 # REPETITION 1
 table_text = 'The Name instance'
@@ -415,14 +435,14 @@ except:
 
 def format_1(dataFrame, df_columns, analyse_name):
     global MASTER_TABLE
-    
+
     def check_spelling(item):
         try:
             row = item[df_columns[0]]
             row_split = row.split()
             for i in row_split:
                 if not i[0].isupper():
-                    if not i == "of" and not i == "and" and not i =="the":
+                    if not i == "of" and not i == "and" and not i == "the":
                         return True
             return False
         except:
@@ -442,7 +462,7 @@ def format_1(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
-    
+
     # if there are no values exit
     if df_percent == 0:
         MASTER_TABLE += "% of rows where the Region/Regional Scope column items is without capitalization\n"
@@ -453,18 +473,19 @@ def format_1(dataFrame, df_columns, analyse_name):
 
         add_to_cmd_table(analyse_name, "PASS")
         return
-    
+
     add_to_cmd_table(analyse_name, "FIX", True)
-    
-    table = [["% of rows where the Region/Regional Scope column items is without capitalization"],[df_percent]]
+
+    table = [["% of rows where the Region/Regional Scope column items is without capitalization"], [df_percent]]
     print_table(table, True)
 
     # save document
     df_full_table = dataFrame.loc[indexes]
-    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+    df_full_table.to_csv(
+        f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
 
 
-if (df[["Region/Regional Scope"]].isnull().sum() == df.shape[0]).all() == False:            
+if (df[["Region/Regional Scope"]].isnull().sum() == df.shape[0]).all() == False:
     format_1(df, ["Region/Regional Scope"], "Formatting-1")
 else:
     print("No Region/Regional Scope")
@@ -475,7 +496,6 @@ else:
     MASTER_TABLE += "-\n"
     MASTER_TABLE += "-\n"
     MASTER_TABLE += "-\n"
-    
 
 
 # In[11]:
@@ -483,14 +503,14 @@ else:
 
 def format_2(dataFrame, df_columns, analyse_name):
     global MASTER_TABLE
-    
+
     def check_numbers(item):
         row = item[df_columns[0]]
-        if not isinstance(row,float) and not isinstance(row,int) and not isinstance(row, np.int64):
+        if not isinstance(row, float) and not isinstance(row, int) and not isinstance(row, np.int64):
             return True
         else:
             return False
-    
+
     df_local = dataFrame[df_columns]
 
     df_results = df_local[df_local.apply(check_numbers, axis=1)]
@@ -504,7 +524,7 @@ def format_2(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
-    
+
     # if there are no values exit
     if df_percent == 0:
         MASTER_TABLE += "% of rows where the Value column does items not contain a number\n"
@@ -515,17 +535,19 @@ def format_2(dataFrame, df_columns, analyse_name):
 
         add_to_cmd_table(analyse_name, "PASS")
         return
-    
+
     add_to_cmd_table(analyse_name, "FIX", True)
 
-    table = [["% of rows where the Value column does items not contain a number"],[df_percent]]
+    table = [["% of rows where the Value column does items not contain a number"], [
+        df_percent]]
     print_table(table, True)
-
 
     # save document
     df_full_table = dataFrame.loc[indexes]
-    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
-            
+    df_full_table.to_csv(
+        f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
+
+
 format_2(df, ["Value"], "Formatting_2")
 
 
@@ -547,7 +569,7 @@ def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_t
         # temp = dataFrame[item].astype(str).str.replace('.', '', regex=True)
         temp = dataFrame[item].astype(str)
         search_range = temp[temp.str.contains(regex)]
-        
+
         # set indexes to search range ndexes
         indexes = search_range.index.tolist()
 
@@ -557,12 +579,13 @@ def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_t
         # save file if found
         if len(indexes) > 0:
             # create a file name
-            cn = re.sub("[^A-Z]", " ", item,0,re.IGNORECASE)
+            cn = re.sub("[^A-Z]", " ", item, 0, re.IGNORECASE)
             cn = re.sub(' +', '_', cn)
 
             # save document
             df_full_table = dataFrame.loc[indexes]
-            df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-{cn}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+            df_full_table.to_csv(
+                f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-{cn}-Output_1-{filename}-{CURRENT_DATE}.csv', encoding='utf-8')
 
     # calculate percentages
     output_percentages = [int(i) / df_local.shape[0] for i in output_count]
@@ -572,21 +595,22 @@ def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_t
     MASTER_TABLE += f"{description_text}\n"
 
     # if there are no values exit
-    if  len([x for x in output_count if int(x) != 0]) == 0:
+    if len([x for x in output_count if int(x) != 0]) == 0:
         MASTER_TABLE += "PASS\n"
         MASTER_TABLE += "-\n"
         MASTER_TABLE += "-\n"
         MASTER_TABLE += "-\n"
         add_to_cmd_table(analyse_name, "PASS")
         return
-    
+
     if analyse_name == "Formatting_5":
         add_to_cmd_table(analyse_name, "FIX", True)
     else:
         add_to_cmd_table(analyse_name, "FIX")
-    
+
     table = [df_local.columns.tolist(), output_percentages, output_count]
     print_table(table, False, ["Column", "Percentage", "Count"])
+
 
 regex = r"([^A-Za-z0-9 ])\1"
 description_text = "% of rows with a doubled character that is not a letter or number in any column & count"
@@ -594,21 +618,23 @@ format_all_columns(df, df.columns, regex, "Formatting_3", description_text)
 
 regex = r"([ ])\1"
 description_text = "% of rows with a doubled space in any column & count"
-format_all_columns(df, df.columns, regex, "Formatting_4",description_text)
+format_all_columns(df, df.columns, regex, "Formatting_4", description_text)
 
 regex = r"([?])"
 description_text = "% of rows with a question mark in any column & count"
-format_all_columns(df, df.columns, regex, "Formatting_5",description_text)
+format_all_columns(df, df.columns, regex, "Formatting_5", description_text)
 
 
 # In[ ]:
 
 
-def save_table ():
+def save_table():
     global MASTER_TABLE
     fname = f'{FOLDER_PATH}/Report-{filename}-{CURRENT_DATE}.csv'
     with open(f'{fname}', 'w', newline='') as f_output:
         f_output.write(MASTER_TABLE)
+
+
 save_table()
 
 
@@ -632,13 +658,16 @@ def split_files(directory):
                     chunkFolder = f"{directory}/{filename[:-4]}/"
                     if not os.path.exists(chunkFolder):
                         os.mkdir(chunkFolder)
-                    for i,chunk in enumerate(pd.read_csv(f, chunksize=250000)):
-                        chunk.to_csv(chunkFolder+f'{filename[:-4]}'+'-{}.csv'.format(i), index=False)
+                    for i, chunk in enumerate(pd.read_csv(f, chunksize=250000)):
+                        chunk.to_csv(
+                            chunkFolder+f'{filename[:-4]}'+'-{}.csv'.format(i), index=False)
                         print(i)
                     # remove file from the system
                     os.remove(f)
         if os.path.isdir(f):
             split_files(f)
+
+
 split_files(FOLDER_PATH)
 
 
@@ -662,7 +691,3 @@ print(tabulate(CMD_TABLE, headers, tablefmt="pretty", colalign=colalign))
 
 
 # In[ ]:
-
-
-
-

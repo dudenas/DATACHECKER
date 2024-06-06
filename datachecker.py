@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[13]:
 
 
 import shutil
@@ -29,15 +29,15 @@ warnings.filterwarnings("ignore", 'This pattern has match groups')
 warnings.filterwarnings("ignore", 'This pattern is interpreted as a regular expression, and has match groups')
 
 # Add complete filepath here.
-# filepath = sys.argv[1] if len(sys.argv) > 1 else ''
-filepath = "/Users/kazkas/Downloads/AusLCIConstruction_MVP02_EF_20240514.csv"
+filepath = sys.argv[1] if len(sys.argv) > 1 else ''
+# filepath = "/Users/kazkas/Downloads/IPCCEDGAR_EF_MVP02_20240604.csv"
 zip = sys.argv[2].lower() == 'true' if len(sys.argv) > 2 else False
 
 filename = Path(filepath).stem
 folder_to_download = filename  # Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
 
 
-# In[6]:
+# In[14]:
 
 
 # Open the JSON file and load columns into variables
@@ -48,12 +48,13 @@ with open("columns.json", 'r') as json_file:
     non_discerning_columns = data["non_discerning_columns"]
 
 
-# In[27]:
+# In[19]:
 
 
 # change if there is an error reading csv or it is strangely formatted
 # df = pd.read_csv(filepath, on_bad_lines='skip')
-df = pd.read_csv(filepath)
+# df = pd.read_csv(filepath)
+df = pd.read_csv(filepath, engine="python", encoding='utf-8', on_bad_lines='warn')
 # df = pd.read_csv(filepath, sep='delimiter', header=None)
 
 # add index to match the csv
@@ -147,7 +148,7 @@ for index, item in enumerate(universal_tabular_columns):
         df[item] = pd.Series(dtype='object')
 
 
-# In[29]:
+# In[7]:
 
 
 def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
@@ -221,7 +222,7 @@ table_text = ['Number of instances', 'Number of records that indiscernable', '% 
 duplicates_non_discerning(df, non_discerning_columns, table_text, "Non_discerning_info")
 
 
-# In[30]:
+# In[8]:
 
 
 def missing_value(dataFrame):
@@ -305,7 +306,7 @@ def missing_value(dataFrame):
 missing_value(df)
 
 
-# In[31]:
+# In[9]:
 
 
 def repetition(dataFrame, df_columns, table_text, analyse_name):
@@ -407,7 +408,7 @@ except:
     pass
 
 
-# In[32]:
+# In[10]:
 
 
 def format_1(dataFrame, df_columns, analyse_name):
@@ -475,7 +476,7 @@ else:
     
 
 
-# In[33]:
+# In[11]:
 
 
 def format_2(dataFrame, df_columns, analyse_name):
@@ -526,7 +527,7 @@ def format_2(dataFrame, df_columns, analyse_name):
 format_2(df, ["Value"], "Formatting_2")
 
 
-# In[34]:
+# In[12]:
 
 
 def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_text):
@@ -598,7 +599,7 @@ description_text = "% of rows with a question mark in any column & count"
 format_all_columns(df, df.columns, regex, "Formatting_5",description_text)
 
 
-# In[35]:
+# In[ ]:
 
 
 def save_table ():
@@ -609,7 +610,7 @@ def save_table ():
 save_table()
 
 
-# In[36]:
+# In[ ]:
 
 
 def split_files(directory):
@@ -639,7 +640,7 @@ def split_files(directory):
 split_files(FOLDER_PATH)
 
 
-# In[37]:
+# In[ ]:
 
 
 # Only make an archive if zip is True
@@ -649,7 +650,7 @@ if zip:
     FileLink(filelink)
 
 
-# In[38]:
+# In[ ]:
 
 
 # Column headers

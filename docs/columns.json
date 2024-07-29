@@ -1,0 +1,18 @@
+{
+    "universal_tabular_columns": ["Name", "Description", "Source Organization", "Source", "Sample/Representative Date",
+        "Region/Regional Scope", "Other",
+        "Composition, Parameters/Conditions", "Valid until",
+        "PCR title & Number", "Functional Unit", "Excluded Lifecycle Stages",
+        "Environmental Parameters/Impact Categories Included", "HS Codes", "Date Published", "Unit",
+        "Value", "Link to EPD", "Registration/ID Number",
+        "Components", "Equation", "Primary Product", "Industry Tags"
+    ],
+    "non_discerning_columns": ["Name", "Description", "Source Organization", "Source", "Sample/Representative Date",
+        "Region/Regional Scope", "Other",
+        "Composition, Parameters/Conditions", "Valid until",
+        "PCR title & Number", "Functional Unit", "Excluded Lifecycle Stages",
+        "Environmental Parameters/Impact Categories Included", "HS Codes", "Date Published", "Unit"
+    ],
+    "mandatory_columns_ef": ["Name", "Value", "Unit", "Region/Regional Scope", "Industry Tags", "Sample/Representative Date", "Source"],
+    "mandatory_columns_cl": ["Name", "Components", "Industry Tags", "Source"]
+}

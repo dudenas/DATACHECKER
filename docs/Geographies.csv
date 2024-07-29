@@ -1,0 +1,564 @@
+ID,Name,Shortname,Latitude,Longitude,Geography Classification,Contained and Overlapping Geographies
+fd6f25d2-7e2d-11de-9820-0019e336be3a,Middle East,RME,28.5463502064,48.6680092068,ecoinvent Region,"AE; IAI Area, Asia, without China and GCC; IAI Area, Gulf Cooperation Council; IQ; IR; KW; SA; SAS"
+133fc02a-7d7e-11de-9ae2-0019e336be3a,Tunisia,TN,35.383,9.596,Country,
+0a46f524-7d7e-11de-9ae2-0019e336be3a,Bulgaria,BG,42.761,25.231,Country,
+2b57aeea-88d5-11de-99d3-0019e336be3a,Eastern Asia,UN-EASIA,38.2144415109,105.256771985,UN Subregion,"Asia without China; China w/o Inner Mongol; CN; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ; HK; IAI Area, Asia, without China and GCC; JP; KP; KR; MN; MO; TW"
+10061efe-7d7e-11de-9ae2-0019e336be3a,Gibraltar,GI,36.138,-5.345,Country,
+0723d252-7e2a-11de-9820-0019e336be3a,Europe,RER,59.9701276677,78.9617689134,ecoinvent Region,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+1520c2a4-7d7e-11de-9ae2-0019e336be3a,Serbia,RS,44.032,20.806,Country,
+dee052a0-3714-41b6-86c0-79d062704c25,"India, Lakshadweep",IN-LD,,,Province or State,
+7676497b-9db7-4ec9-9b0f-0eae9df88caf,"United States of America, Alabama",US-AL,,,Province or State,
+1347b0a0-7d7e-11de-9ae2-0019e336be3a,Türkiye,TR,39.061,35.179,Country,
+42e6cfaf-ffa3-4f42-85bb-55e1b1c40c56,ReliabilityFirst Corporation,US-RFC,40.8119077976,-82.2395749616,Electricity Grid,US-DC; US-DE; US-IL; US-IN; US-KY; US-MD; US-MI; US-NJ; US-OH; US-PA; US-VA; US-WI; US-WV
+81e54bf8-5993-5b5b-bc50-6978cab0c51f,Rest of Europe,RoE,,,ecoinvent Custom Area,
+eb2442cf-93eb-4784-99f9-7a0c97c3576f,"India, Tamil Nadu",IN-TN,,,Province or State,
+1d8c3d96-7a65-4a30-8032-9e8e11f63e7c,"United States of America, New York",US-NY,,,Province or State,
+df16b2b2-c49e-4560-9b74-cbcbe0a8d281,"India, Nagaland",IN-NL,,,Province or State,
+1337d22a-7d7e-11de-9ae2-0019e336be3a,Togo,TG,8.799,1.081,Country,
+13293cec-7d7e-11de-9ae2-0019e336be3a,Tajikistan,TJ,38.665,69.42,Country,
+0f0215a8-7d7e-11de-9ae2-0019e336be3a,North Korea,KP,39.778,126.451,Country,
+0d7e9abc-7d7e-11de-9ae2-0019e336be3a,Gambia,GM,13.453,-15.386,Country,
+32ed4dc7-920a-4fd1-9977-d2237c652bde,"United States of America, New Hampshire",US-NH,,,Province or State,
+09b1a988-7d7e-11de-9ae2-0019e336be3a,Australia,AU,-24.973,136.189,Country,AU-ACT; AU-JBT; AU-NSW; AU-NT; AU-QLD; AU-SA; AU-TAS; AU-VIC; AU-WA
+3ba5f7ad-9ae4-4af2-ba30-25bdfdc16295,"United States of America, Wyoming",US-WY,,,Province or State,
+7846b897-7c04-4f9f-b607-2b83fcd9a74c,Rest-of-World,RoW,,,ecoinvent Custom Area,
+0ed905c8-7d7e-11de-9ae2-0019e336be3a,Japan,JP,36.491,139.068,Country,
+0a4f62db-9145-46d3-b4b0-7f6ad5dce81c,"United States of America, New Jersey",US-NJ,,,Province or State,
+114ebb04-7d7e-11de-9ae2-0019e336be3a,Poland,PL,52.125,19.401,Country,
+ca32e3be-5acc-4486-88cf-731cdff3b9c5,Kosovo,XK,,,Miscellaneous,
+57777d57-f253-466e-b1fa-916a1caf586b,"United States of America, North Dakota",US-ND,,,Province or State,
+9e2f10b3-138f-4320-95a3-ea3853c5fbdd,"China, Ningxia (宁夏回族自治区)",CN-NX,,,Province or State,
+a6ed7d3f-b1a1-4690-8278-852a75a0115e,"United States of America, Connecticut",US-CT,,,Province or State,
+06bbed25-6ebe-48aa-9b92-300bddaeb2b7,"China, Hebei (河北)",CN-HB,,,Province or State,
+09f36814-7d7e-11de-9ae2-0019e336be3a,Belize,BZ,17.219,-88.602,Country,
+09db3260-7e2a-11de-9820-0019e336be3a,Latin America and the Caribbean,RLA,-10.1194147825,-65.6243982724,UN Subregion,"AG; AI; AR; AW; BB; BL; BO; BQ; BR; BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO; BZ; CL; CO; CR; CU; CW; DM; DO; EC; FK; France, including overseas territories; GD; GF; GP; GT; GY; HN; HT; IAI Area, South America; JM; KN; KY; LC; MF; MQ; MS; MX; NAFTA; NI; PA; PE; PY; SR; SV; SX; TC; TT; UN-CAMERICA; UN-CARIBBEAN; UN-SAMERICA; US-PR; UY; VC; VE; VG; VI"
+5c322a16-89ab-48d4-b1a2-fec5759774a3,"Europe without Germany, the Netherlands, and Russia",RER w/o DE+NL+RU,,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RO; RS; SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+0ef0fe6c-7d7e-11de-9ae2-0019e336be3a,Jordan,JO,30.703,36.319,Country,
+64441fa1-0151-47ac-b97a-1fd886b90cae,"Brazil, Mato Grosso",BR-MT,,,Province or State,
+0e3b3d98-7d7e-11de-9ae2-0019e336be3a,Guyana,GY,4.792,-58.974,Country,
+13b215dc-598a-480e-98e6-13675076ac78,"China, Liaoning (辽宁)",CN-LN,,,Province or State,
+12a65db8-7d7e-11de-9ae2-0019e336be3a,Seychelles,SC,-4.647,55.474,Country,
+567cc8ea-05d0-4d27-a509-89f10e1a280e,"India, Goa",IN-GA,,,Province or State,
+34dbbff8-88ce-11de-ad60-0019e336be3a,Global,GLO,,,World,"AD; AE; AF; AG; AI; Akrotiri; AL; AM; AO; AQ; AR; AS; Asia without China; AT; AU; AU-AC; AU-ACT; AU-IOT; AU-JBT; AU-NSW; AU-NT; AU-QLD; AU-SA; AU-TAS; AU-VIC; AU-WA; AW; AX; AZ; BA; Bajo Nuevo; BALTSO; BB; BD; BE; BF; BG; BH; BI; BJ; BL; BM; BN; BO; BQ; BR; BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO; BS; BT; BV; BW; BY; BZ; CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; Canary Islands; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; CC; CD; Central Asia; CENTREL; CF; CG; CH; China w/o Inner Mongol; CI; CK; CL; Clipperton Island; CM; CN; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ; CO; Coral Sea Islands; CR; CS; CU; CV; CW; CX; CY; Cyprus No Mans Area; CZ; DE; Dhekelia Base; DJ; DK; DM; DO; DZ; EC; EE; EG; EH; ENTSO-E; ER; ES; ET; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FJ; FK; FM; FO; FR; France, including overseas territories; FSU; GA; GB; GD; GE; GF; GG; GH; GI; GL; GM; GN; GP; GQ; GR; GS; GT; GU; Guantanamo Bay; GW; GY; HK; HM; HN; HR; HT; HU; IAI Area, Africa; IAI Area, Asia, without China and GCC; IAI Area, EU27 & EFTA; IAI Area, Gulf Cooperation Council; IAI Area, North America; IAI Area, North America, without Quebec; IAI Area, Russia & RER w/o EU27 & EFTA; IAI Area, South America; ID; IE; IL; IM; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IO; IQ; IR; IS; IT; JE; JM; JO; JP; KE; KG; KH; KI; KM; KN; KP; KR; KW; KY; KZ; LA; LB; LC; LI; LK; LR; LS; LT; LU; LV; LY; MA; MC; MD; ME; MF; MG; MH; MK; ML; MM; MN; MO; MP; MQ; MR; MRO; MS; MT; MU; MV; MW; MX; MY; MZ; NA; NAFTA; NC; NE; NF; NG; NI; NL; NO; NORDEL; North America without Quebec; Northern Cyprus; NP; NPCC; NR; NU; NZ; OM; PA; PE; PF; PG; PH; PK; PL; PM; PN; PS; PT; PW; PY; QA; Québec, HQ distribution network; RAF; RAS; RE; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RLA; RME; RNA; RO; RS; RU; Russia (Asia); Russia (Europe); RW; SA; SAS; SB; SC; Scarborough Reef; SD; SE; Serranilla Bank; SG; SH; SI; Siachen Glacier; SJ; SK; SL; SM; SN; SO; Somaliland; Spratly Islands; SR; SS; ST; SV; SX; SY; SZ; TC; TD; TF; TG; TH; TJ; TK; TL; TM; TN; TO; TR; TT; TV; TW; TZ; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UG; UM; UN-AMERICAS; UN-ASIA; UN-AUSTRALIANZ; UN-CAMERICA; UN-CARIBBEAN; UN-EAFRICA; UN-EASIA; UN-EEUROPE; UN-EUROPE; UN-MAFRICA; UN-MELANESIA; UN-MICRONESIA; UN-NAFRICA; UN-NEUROPE; UN-OCEANIA; UN-POLYNESIA; UN-SAMERICA; UN-SAFRICA; UN-SEASIA; UN-SEUROPE; UN-WAFRICA; UN-WASIA; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-PR; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; UY; UZ; VA; VC; VE; VG; VI; VN; VU; WECC; WEU; WF; WS; XK; YE; YT; ZA; ZM; ZW"
+79abbd47-8e8b-4932-94c8-f3518ff110e9,"China, Shanxi (山西)",CN-SX,,,Province or State,
+f4f87f1d-101c-4b43-b2de-f646734ae9fe,Europe without Switzerland and Austria,Europe without Switzerland and Austria,,,ecoinvent Custom Area,"AD; AL; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without NORDEL (NCPA); Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+29dca13b-9d4b-4714-9c80-1808b9127dda,"Canada, Yukon",CA-YK,,,Province or State,
+d0145549-5ad2-4cc6-8e5b-c6ed6223d2db,"India, Assam",IN-AS,,,Province or State,
+888f6bc1-22f6-486b-b2f3-814672df6930,"India, Andhra Pradesh",IN-AP,,,Province or State,
+8bd484ff-ec4e-45c6-9f61-e211a872a4ff,"Europe without Germany, the Netherlands, Norway, and Russia",RER w/o DE+NL+NO+RU,,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RO; RS; SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+26c31b7c-e0d1-11de-823b-0019e336be3a,UCTE without France,UCTE without France,46.0384312358,12.5273848868,Electricity Grid,"AD; AT; BA; BE; BG; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; ES; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IT; LI; LU; MC; ME; MK; NL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SI; SK; SM; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+e9f525be-34b8-45b6-9c33-5daf8b97fe7c,Clipperton Island,Clipperton Island,,,Country,
+a0c4cf31-7062-4c1a-ba55-582bc899f766,"United States of America, Montana",US-MT,,,Province or State,MRO; US-MRO; US-WECC; WECC
+de74489a-e3bf-4b3a-8463-b7b9eba8a8fb,Western Europe,WEU,48.5320673436,6.48722066413,UN Subregion,"AT; BE; CH; DE; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FR; France, including overseas territories; IAI Area, EU27 & EFTA; LI; LU; MC; NL; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; UCTE without France; UCTE without Germany; UCTE without Germany and France"
+132fcda0-7d7e-11de-9ae2-0019e336be3a,Tokelau,TK,-9.193,-171.853,Country,
+101cf458-7d7e-11de-9ae2-0019e336be3a,Montenegro,ME,42.792,19.254,Country,
+946938ce-9c81-4a3c-a6ce-ce60a931c602,"Australia, Indian Ocean Territories",AU-IOT,,,Province or State,CC; CX
+a7b38401-afb6-4130-86f6-cd5184c6c40e,SERC Reliability Corporation,US-SERC,34.9951368575,-86.4752411726,Electricity Grid,US-AL; US-AR; US-FL; US-GA; US-IL; US-KY; US-LA; US-MO; US-MS; US-NC; US-SC; US-TN; US-TX; US-VA
+fbfd6cb0-56b1-4d0b-a13f-7f9f213f9afa,"China, Guangdong (广东)",CN-GD,,,Province or State,
+c692fbb4-53d5-4e63-920d-361e98c90dab,Serranilla Bank,Serranilla Bank,,,Miscellaneous,
+00e67757-ad16-44e0-90fe-2bf10d4c2186,"United States of America, Michigan",US-MI,,,Province or State,
+10cadb86-7d7e-11de-9ae2-0019e336be3a,United States Minor Outlying Islands,UM,-0.385,-160.027,Country,
+e675a82e-88d2-11de-99d3-0019e336be3a,Northern Africa,UN-NAFRICA,23.8836323758,15.9667099565,UN Subregion,"DZ; EG; EH; IAI Area, Africa; LY; MA; SD; TN"
+1387ef8a-7d7e-11de-9ae2-0019e336be3a,Ukraine,UA,49.016,31.388,Country,
+b3d19998-fe81-4783-a19e-408d7424d876,"India, Madhya Pradesh",IN-MP,,,Province or State,
+1cfaa6a1-259a-442f-80ca-1070cfbbf6da,Russia (Europe),Russia (Europe),,,ecoinvent Region,
+0f0882c6-7d7e-11de-9ae2-0019e336be3a,Kiribati,KI,-1.508,175.036,Country,
+15177c76-7d7e-11de-9ae2-0019e336be3a,Turks and Caicos Islands,TC,21.902,-71.95,Country,
+153e85be-7d7e-11de-9ae2-0019e336be3a,Saint Barthelemy,BL,18.04,-63.043,Country,
+5cf02fb9-22f3-4f49-9745-9e5bb7756935,"United States of America, Arizona",US-AZ,,,Province or State,
+119679bc-7d7e-11de-9ae2-0019e336be3a,Philippines,PH,11.118,122.466,Country,
+100cd4b0-7d7e-11de-9ae2-0019e336be3a,Luxembourg,LU,49.771,6.088,Country,
+518f1827-fe70-400e-b521-48f2f72fd777,"India, Kerala",IN-KL,,,Province or State,
+24c6336b-e160-4d2a-8d25-ac207a66f6c1,"China, Tianjin (天津)",CN-TJ,,,Province or State,
+dc8836a3-1d91-49ed-b4b7-0482f7ec3eaf,"Brazil, Ceará",BR-CE,,,Province or State,
+0f6c1a98-7d7e-11de-9ae2-0019e336be3a,Mongolia,MN,46.056,102.876,Country,
+1325cfa3-2b0d-487e-8d46-3e66b4b00f85,"Canada, Nunavut",CA-NU,,,Province or State,
+9923dac7-3164-4e2f-8723-f343d998072d,"China, Hunan (湖南)",CN-HN,,,Province or State,
+10df2fe6-7d7e-11de-9ae2-0019e336be3a,Netherlands,NL,52.077,5.389,Country,
+14ba15f4-7d7e-11de-9ae2-0019e336be3a,Indonesia,ID,-0.976,114.252,Country,
+854cdfab-82bf-4c25-8515-ba33589d3efe,Texas Regional Entity,US-TRE,30.9172174315,-99.2126487428,Electricity Grid,US-OK; US-TX
+d766dc54-3e8f-4ac4-8a0f-69707a338b33,"India, Dadra and Nagar Haveli",IN-DN,,,Province or State,
+115c647a-7d7e-11de-9ae2-0019e336be3a,Portugal,PT,40.309,-8.058,Country,
+0e56bc44-7d7e-11de-9ae2-0019e336be3a,Hungary,HU,47.07,19.134,Country,
+0cd04f34-7d7e-11de-9ae2-0019e336be3a,Costa Rica,CR,9.971,-83.946,Country,
+0c33b64c-7d7e-11de-9ae2-0019e336be3a,Burundi,BI,-3.356,29.887,Country,
+f7228566-0785-45da-b946-01f82d277dda,"India, Puducherry",IN-PY,,,Province or State,
+f3b8b2cb-5fd9-4cfc-b947-783a102c739e,"IAI Area, South America","IAI Area, South America",,,Aluminium Industry,AR; BR; BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO; VE
+4c05bd06-d401-45cd-b594-c1eafa0ef95b,"Brazil, Alagoas",BR-AL,,,Province or State,
+11663ae0-7d7e-11de-9ae2-0019e336be3a,Papua New Guinea,PG,-5.949,143.459,Country,
+096781b4-7d7e-11de-9ae2-0019e336be3a,Azerbaijan,AZ,40.43,47.395,Country,
+0efacce4-7d7e-11de-9ae2-0019e336be3a,Kyrgyzstan,KG,41.465,74.555,Country,
+0f55e480-7d7e-11de-9ae2-0019e336be3a,Liechtenstein,LI,47.153,9.555,Country,
+bf7827a3-16a7-4a38-ad02-527898a12a7f,"China, Henan (河南)",CN-HE,,,Province or State,
+12f2d954-7d7e-11de-9ae2-0019e336be3a,Saint Lucia,LC,13.898,-60.969,Country,
+0fff8e5e-7d7e-11de-9ae2-0019e336be3a,Faroe Islands,FO,62.05,-6.864,Country,
+39f4e9cc-478c-4fc8-847e-d219f7f9f23e,"United States of America, West Virginia",US-WV,,,Province or State,
+147cde5a-7d7e-11de-9ae2-0019e336be3a,Zimbabwe,ZW,-19,29.872,Country,
+001c936c-cf14-46dd-a99e-b1ef30f51c96,"India, Tripura",IN-TR,,,Province or State,
+4484cb2d-50e8-43a0-a79f-80313021306a,"IAI Area, Africa","IAI Area, Africa",,,Aluminium Industry,CM; EG; GH; MZ; NG; UN-EAFRICA; UN-MAFRICA; UN-NAFRICA; UN-SAFRICA; UN-WAFRICA; ZA
+098df75e-7d7e-11de-9ae2-0019e336be3a,American Samoa,AS,-14.318,-170.73,Country,
+cff5fe64-d6cf-4256-8bd0-428dc0f104f6,South Sudan,SS,,,Country,
+09da334e-7d7e-11de-9ae2-0019e336be3a,The Bahamas,BS,24.628,-78.014,Country,
+1a3d1ef6-b2f8-44b8-b51a-c82dec5f769b,"Brazil, Goiás",BR-GO,,,Province or State,
+14644bba-7d7e-11de-9ae2-0019e336be3a,Wallis and Futuna,WF,-13.7842681723,-177.143975234,Country,
+78a0e465-7d36-4e37-a266-79acaa4a681f,"United States of America, Idaho",US-ID,,,Province or State,
+382dddce-39d3-40f4-9c5a-775510ec29ef,"United States of America, Oklahoma",US-OK,,,Province or State,MRO; US-MRO; US-TRE
+0ea9e766-7d7e-11de-9ae2-0019e336be3a,Iran,IR,32.565,54.301,Country,
+09581fbc-7d7e-11de-9ae2-0019e336be3a,Antigua and Barbuda,AG,17.078,-61.783,Country,
+1351b0f0-7d7e-11de-9ae2-0019e336be3a,Tuvalu,TV,-8.514,179.219,Country,
+61afcbeb-199e-45b6-9431-a88d74cdc275,"United States of America, Virginia",US-VA,,,Province or State,US-RFC; US-SERC
+ae85cec6-cc61-4a0d-a322-5fb10b6b4ece,"Europe without Germany, the Netherlands, and Norway",RER w/o DE+NL+NO,,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CS; CZ; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+16e5b85a-c069-429c-b0e1-6032ca19c322,"United States of America, Missouri",US-MO,,,Province or State,MRO; US-MRO; US-SERC
+25457a88-a525-4fd8-b73d-72fd3f37fc74,"India, Western grid",IN-Western grid,,,Electricity Grid,IN-CT; IN-DD; IN-DN; IN-GA; IN-GJ; IN-MH; IN-MP
+e6d3af00-88d2-11de-99d3-0019e336be3a,Southern Africa,UN-SAFRICA,-25.4900597391,22.5350177988,UN Subregion,"BW; IAI Area, Africa; LS; NA; SZ; ZA"
+e58a4a8a-ca18-48d8-9023-3628de160e8e,"China, Jilin (吉林)",CN-JL,,,Province or State,
+09f7dc00-7d7e-11de-9ae2-0019e336be3a,Bosnia and Herzegovina,BA,44.169,17.786,Country,
+152b7aad-0b95-4317-be14-c8513a2dff8c,"United States of America, Washington",US-WA,,,Province or State,
+10988ebe-8be4-43c6-8451-3273ca12cd47,"India, Meghalaya",IN-ML,,,Province or State,
+0d0e72a0-7d7e-11de-9ae2-0019e336be3a,Ecuador,EC,-1.385,-78.497,Country,
+6e1c02cc-e7fc-4e63-a30e-59cfa5c4d9c1,"Brazil, Mid-western grid",BR-Mid-western grid,,,Electricity Grid,BR-DF; BR-GO; BR-MS; BR-MT
+83cdc953-e485-453b-a8f9-749f92aca417,"India, Punjab",IN-PB,,,Province or State,
+5d8ac1db-f842-4688-aba1-673c4f07b1dd,"Brazil, Espírito Santo",BR-ES,,,Province or State,
+0a2c8c66-7d7e-11de-9ae2-0019e336be3a,Brazil,BR,-10.772,-53.089,Country,BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO
+0ff7be54-7d7e-11de-9ae2-0019e336be3a,Hong Kong S.A.R.,HK,22.423,114.129,Country,
+f37ced82-5df8-48c2-a207-1e36dd11a112,"Western Electricity Coordinating Council, US part only",US-WECC,,,Electricity Grid,MRO; US-AZ; US-CA; US-CO; US-ID; US-MT; US-NE; US-NM; US-NV; US-OR; US-SD; US-TX; US-UT; US-WA; US-WY
+0fec983a-7d7e-11de-9ae2-0019e336be3a,Aruba,AW,12.517,-69.977,Country,
+09818690-7d7e-11de-9ae2-0019e336be3a,Armenia,AM,40.534,44.563,Country,
+0e0e1020-7d7e-11de-9ae2-0019e336be3a,Germany,DE,51.11,9.851,Country,
+0d751636-7d7e-11de-9ae2-0019e336be3a,France,FR,46.565,2.55,Country,
+6ba95ea2-6963-4dad-aa26-a5b45785e7f0,Spratly Islands,Spratly Islands,,,Miscellaneous,
+e3daf92a-88d2-11de-99d3-0019e336be3a,Eastern Africa,UN-EAFRICA,-5.50953147664,37.0951986001,UN Subregion,"BI; DJ; ER; ET; France, including overseas territories; IAI Area, Africa; KE; KM; MG; MU; MW; MZ; RE; RW; SC; SO; Somaliland; SS; TZ; UG; YT; ZM; ZW"
+6859dfd7-168b-4a36-9429-e0e884bff83a,"India, Uttarakhand",IN-UT,,,Province or State,
+79565b15-098f-471f-aa28-d7dd611657db,Southwest Power Pool,US-SPP,36.1893042759,-97.9052853202,Electricity Grid,
+0f59bb46-7d7e-11de-9ae2-0019e336be3a,Libya,LY,27.044,18.023,Country,
+5874165e-031e-4e85-ab69-8c2ae6a1a970,China without Inner Mongol,China w/o Inner Mongol,,,ecoinvent Custom Area,CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ
+c23d9dc6-d794-4775-8e92-ee830a084a7f,"India, Karnataka",IN-KA,,,Province or State,
+0f0f980e-7d7e-11de-9ae2-0019e336be3a,South Korea,KR,36.504,128.103,Country,
+0d0167a4-7d7e-11de-9ae2-0019e336be3a,Djibouti,DJ,11.9,42.516,Country,
+14a80a4c-7e2a-11de-9820-0019e336be3a,Commonwealth of Independent States,FSU,60.9882831546,92.1393690129,ecoinvent Region,"AM; Asia without China; AZ; BY; Central Asia; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; IAI Area, Asia, without China and GCC; IAI Area, Russia & RER w/o EU27 & EFTA; KG; KZ; MD; RAS; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RU; Russia (Asia); Russia (Europe); TJ; UN-ASIA; UN-EEUROPE; UN-EUROPE; UN-WASIA; UZ"
+14bfff77-d5a0-4ad5-9936-58636c295e99,"India, Maharashtra",IN-MH,,,Province or State,
+bfa34abd-72eb-4b5f-aa6c-4a337891eff8,"United States of America, Vermont",US-VT,,,Province or State,
+146f1702-7d7e-11de-9ae2-0019e336be3a,Yemen,YE,15.807,48.355,Country,
+54e71d4b-1d1f-473d-91db-15d40c496a6d,"Brazil, Tocantins",BR-TO,,,Province or State,
+67c114d5-d361-4466-a5e7-fc21c498a254,Europe without Austria,Europe without Austria,,,ecoinvent Custom Area,"AD; AL; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+151bdf00-7d7e-11de-9ae2-0019e336be3a,Western Sahara,EH,24.554,-13.706,Country,
+0f405034-7d7e-11de-9ae2-0019e336be3a,Belarus,BY,53.54,28.047,Country,
+147563fa-7d7e-11de-9ae2-0019e336be3a,Zambia,ZM,-14.614,26.32,Country,
+09cf6a0e-7d7e-11de-9ae2-0019e336be3a,Bahrain,BH,26.019,50.562,Country,
+053e6c3d-7a86-45f4-85af-be0f971998a0,"United States of America, Alaska",US-AK,,,Province or State,
+14fec0f0-7d7e-11de-9ae2-0019e336be3a,East Timor,TL,-8.822,125.878,Country,
+0cf01346-7d7e-11de-9ae2-0019e336be3a,Cook Islands,CK,-21.219,-159.782,Country,
+09d5d736-7d7e-11de-9ae2-0019e336be3a,Bermuda,BM,32.336,-64.709,Country,
+0fe7b522-7d7e-11de-9ae2-0019e336be3a,Niger,NE,17.426,9.398,Country,
+10271ce4-7d7e-11de-9ae2-0019e336be3a,Norfolk Island,NF,-29.037,167.953,Country,
+12b21766-7d7e-11de-9ae2-0019e336be3a,South Africa,ZA,-30.558,23.121,Country,
+154830be-7d7e-11de-9ae2-0019e336be3a,South Georgia and South Sandwich Islands,GS,-54.209,-36.891,Country,
+fdb06d13-ea53-4a9a-878b-7489f2bae2f7,"Australia, Tasmania",AU-TAS,,,Province or State,
+0f980b80-7d7e-11de-9ae2-0019e336be3a,Oman,OM,21.656,57.407,Country,
+12dcac1a-7d7e-11de-9ae2-0019e336be3a,Singapore,SG,1.351,103.808,Country,
+1d87302d-fd96-4acb-9f9f-d3389ba929b7,"Canada, Ontario",CA-ON,,,Province or State,
+4ed30b08-88d5-11de-99d3-0019e336be3a,Western Asia,UN-WASIA,28.4681643997,43.3694647552,UN Subregion,"AE; Akrotiri; AM; AZ; BH; CY; Cyprus No Mans Area; Dhekelia Base; FSU; GE; IAI Area, Asia, without China and GCC; IAI Area, Gulf Cooperation Council; IL; IQ; IR; JO; KW; LB; Northern Cyprus; OM; PS; QA; RME; SA; SAS; SY; TR; YE"
+1356be2e-7d7e-11de-9ae2-0019e336be3a,Turkmenistan,TM,39.122,59.384,Country,
+0ce31d3a-7d7e-11de-9ae2-0019e336be3a,Cuba,CU,21.297,-77.781,Country,
+0f4c70f8-7d7e-11de-9ae2-0019e336be3a,Liberia,LR,6.682,-9.657,Country,
+0ff33cbc-7d7e-11de-9ae2-0019e336be3a,Belgium,BE,50.643,4.664,Country,
+c08de0ce-64e7-4efb-a37f-8df754c262c8,Curaçao,CW,,,Country,
+7661383e-998b-4738-b8dc-9e1e60070c8a,"India, Andaman and Nicobar",IN-AN,,,Province or State,
+14f9e5d0-7d7e-11de-9ae2-0019e336be3a,United Arab Emirates,AE,23.549,54.163,Country,
+12ba54da-7d7e-11de-9ae2-0019e336be3a,Lesotho,LS,-29.581,28.243,Country,
+0f515f00-7d7e-11de-9ae2-0019e336be3a,Slovakia,SK,48.707,19.491,Country,
+868a66d1-7428-4ba2-9125-253b07afc119,"Canada, Québec",CA-QC,53.390446309,-71.7558689582,Province or State,
+6a0f08e3-19ed-4748-a62f-f0920f99d65a,Canary Islands,Canary Islands,28.3379092912,-15.6740912111,Country,
+0d5bcf64-7d7e-11de-9ae2-0019e336be3a,Fiji,FJ,-17.819,177.974,Country,
+4a743c1d-f819-4398-b389-784b84de386e,"China, Guizhou (贵州)",CN-GZ,,,Province or State,
+92618f91-5370-41d9-b5d4-6a9d60b3239f,"Canada, Newfoundland and Labrador",CA-NF,,,Province or State,
+3f1442fa-0808-438c-a355-2a1e96f9adeb,"India, Haryana",IN-HR,,,Province or State,
+8f365212-2317-4cce-bf8d-5898730bcd98,"United States of America, Minnesota",US-MN,,,Province or State,
+09d2df90-7d7e-11de-9ae2-0019e336be3a,Barbados,BB,13.153,-59.559,Country,
+da5d7825-8e05-4bad-b026-4204389cdef3,"China, Inner Mongol (内蒙古自治区)",CN-NM,,,Province or State,
+0f35d820-7d7e-11de-9ae2-0019e336be3a,Lebanon,LB,33.92,35.888,Country,
+0d9a9384-7d7e-11de-9ae2-0019e336be3a,Grenada,GD,12.118,-61.678,Country,
+0e22b962-7d7e-11de-9ae2-0019e336be3a,Greece,GR,39.666,21.766,Country,
+235c5fdc-360e-42dc-9659-3e812977b3d1,"United States of America, Kansas",US-KS,,,Province or State,
+28d52c97-56c5-4bcd-9504-ccc5b4797c67,"France, including overseas territories","France, including overseas territories",,,Country,"Clipperton Island; ENTSO-E; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe, without Russia and Türkiye; FR; GF; GP; IAI Area, EU27 & EFTA; MQ; RAF; RE; RER; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RLA; TF; UCTE; UCTE without Germany; UN-AMERICAS; UN-CARIBBEAN; UN-EAFRICA; UN-EUROPE; UN-SAMERICA; WEU; YT"
+0c29d73a-7d7e-11de-9ae2-0019e336be3a,"Congo, Democratic Republic of the",CD,-2.876,23.654,Country,
+7ac3c1e7-0b7d-4ff9-9aa5-0d67d7da37fa,"China, Fujian (福建)",CN-FJ,,,Province or State,
+1188faee-7d7e-11de-9ae2-0019e336be3a,Moldova,MD,47.193,28.599,Country,
+0e34b6f8-7d7e-11de-9ae2-0019e336be3a,Guinea,GN,10.439,-10.942,Country,
+b7ac8bd0-a9d4-4caf-a832-48a0f3660da7,Asia without China,Asia without China,,,ecoinvent Custom Area,"AE; AF; Akrotiri; AM; AZ; BD; BH; BN; BT; Central Asia; CY; Cyprus No Mans Area; Dhekelia Base; FSU; GE; HK; IAI Area, Asia, without China and GCC; IAI Area, Gulf Cooperation Council; IAI Area, Russia & RER w/o EU27 & EFTA; ID; IL; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IQ; IR; JO; JP; KG; KH; KP; KR; KW; KZ; LA; LB; LK; MM; MN; MO; MV; MY; Northern Cyprus; NP; OM; PH; PK; PS; QA; RME; RU; Russia (Asia); SA; SAS; SG; Siachen Glacier; SY; TH; TJ; TL; TM; TR; TW; UN-ASIA; UN-EASIA; UN-EEUROPE; UN-EUROPE; UN-SEASIA; UN-WASIA; UZ; VN; YE"
+4a81aea7-bf37-4c83-ac1e-9a2050f88920,"IAI Area, North America, without Quebec","IAI Area, North America, without Quebec",,,Aluminium Industry,CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-SK; CA-YK; MRO; NPCC; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC
+0cc14d18-7d7e-11de-9ae2-0019e336be3a,Comoros,KM,-11.758,43.337,Country,
+717c6f47-2eda-4d1b-8277-83f634ea7c23,"Brazil, Paraíba",BR-PB,,,Province or State,
+18288eee-911f-4f54-8881-39c0c0b70779,"United States of America, South Dakota",US-SD,,,Province or State,MRO; US-MRO; US-WECC; WECC
+0b2a8a96-7d7e-11de-9ae2-0019e336be3a,Canada,CA,59.081,-109.433,Country,"CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; IAI Area, North America, without Quebec; MRO; North America without Quebec; NPCC; Québec, HQ distribution network; WECC"
+4c344fd5-a67d-412e-adb4-f3191817011f,Sint Maarten,SX,,,Country,
+12d0bd4c-7d7e-11de-9ae2-0019e336be3a,Slovenia,SI,46.124,14.827,Country,
+150dbd3a-7d7e-11de-9ae2-0019e336be3a,Saint Pierre and Miquelon,PM,47.042,-56.325,Country,
+d38650a8-8c23-4941-9292-f9d7a4dce29b,"United States of America, Iowa",US-IA,,,Province or State,
+f2d812a2-e631-11de-ba56-0019e336be3a,"Europe, UN Region",UN-EUROPE,59.9701276677,78.9617689134,UN Region,"AD; AL; Asia without China; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RAS; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Asia); Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+0f6066da-7d7e-11de-9ae2-0019e336be3a,Madagascar,MG,-19.374,46.706,Country,
+0fecb5e8-7e2a-11de-9820-0019e336be3a,Northern America,RNA,58.7105997541,-91.9682943062,UN Subregion,"BM; CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; GL; IAI Area, North America; IAI Area, North America, without Quebec; MRO; NAFTA; North America without Quebec; NPCC; PM; Québec, HQ distribution network; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC"
+12e2f855-d67d-492c-b59d-12205eeb79ea,"Brazil, Amazonas",BR-AM,,,Province or State,
+cef71bbd-ab04-4959-ac3b-89a0c55e2e8c,"Bonaire, Saint Eustatius and Saba",BQ,,,Country,
+117d1850-7d7e-11de-9ae2-0019e336be3a,Réunion,RE,-21.122,55.538,Country,
+fd95ae8c-7e2d-11de-9820-0019e336be3a,Central European Power Association,CENTREL,50.6703682233,18.8218742069,Electricity Grid,"CZ; HU; IAI Area, EU27 & EFTA; PL; SK"
+50f826e7-ab13-444e-987b-180701b691c9,"Northeast Power Coordinating Council, US part only",US-NPCC,,,Electricity Grid,US-CT; US-MA; US-ME; US-NH; US-NY; US-RI; US-VT
+b8ce14f4-e09b-4117-b4dd-d74af99da744,"Canada, New Brunswick",CA-NB,,,Province or State,
+0eb3bcbe-7d7e-11de-9ae2-0019e336be3a,Israel,IL,31.026,34.851,Country,
+0d325613-94aa-4a65-8014-d3f6ead19eb3,"India, Gujarat",IN-GJ,,,Province or State,
+bf61f94b-cbd6-4a41-9c8b-0ef2b4e06c3c,"India, Odisha",IN-OR,,,Province or State,
+e6a1bb9b-c1f3-49ed-a64b-87d488244ef9,Europe without Russia,RER w/o RU,,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+11387d6c-7d7e-11de-9ae2-0019e336be3a,Peru,PE,-9.326,-75.552,Country,
+14679ce8-7d7e-11de-9ae2-0019e336be3a,Samoa,WS,-13.652,-172.414,Country,
+0fc883d2-7d7e-11de-9ae2-0019e336be3a,Mozambique,MZ,-14.422,37.923,Country,
+1023d322-7d7e-11de-9ae2-0019e336be3a,Aland,AX,60.198,19.952,Country,
+0f7d8030-7d7e-11de-9ae2-0019e336be3a,Mali,ML,17.35,-3.524,Country,
+5d5718f2-ee74-462a-888c-be4d534ef542,Europe without Germany and Switzerland,RER w/o CH+DE,55.6601051637,28.9675361967,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CS; CZ; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+1ae80e7c-e5e3-11de-a739-0019e336be3a,South America,UN-SAMERICA,-15.0396024424,-60.7393077459,UN Subregion,"AR; BO; BR; BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO; CL; CO; EC; FK; France, including overseas territories; GF; GY; IAI Area, South America; PE; PY; SR; UY; VE"
+9232290c-e62b-11de-ba56-0019e336be3a,Oceania,UN-OCEANIA,-25.2828869146,136.406721244,UN Region,AS; AU; AU-ACT; AU-JBT; AU-NSW; AU-NT; AU-QLD; AU-SA; AU-TAS; AU-VIC; AU-WA; CK; FJ; FM; GU; KI; MH; MP; NC; NF; NR; NU; NZ; PF; PG; PN; PW; SB; TK; TO; TV; UN-AUSTRALIANZ; UN-MELANESIA; UN-MICRONESIA; UN-POLYNESIA; VU; WS
+d509536a-7e28-11de-9820-0019e336be3a,"Asia, UN Region",UN-ASIA,32.2204776952,84.5713463063,UN Region,"AE; AF; Akrotiri; AM; Asia without China; AZ; BD; BH; BN; BT; Central Asia; China w/o Inner Mongol; CN; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ; CY; Cyprus No Mans Area; Dhekelia Base; FSU; GE; HK; IAI Area, Asia, without China and GCC; IAI Area, Gulf Cooperation Council; ID; IL; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IQ; IR; JO; JP; KG; KH; KP; KR; KW; KZ; LA; LB; LK; MM; MN; MO; MV; MY; Northern Cyprus; NP; OM; PH; PK; PS; QA; RME; SA; SAS; SG; Siachen Glacier; SY; TH; TJ; TL; TM; TR; TW; UN-EASIA; UN-SEASIA; UN-WASIA; UZ; VN; YE"
+0cf40280-7d7e-11de-9ae2-0019e336be3a,Cyprus,CY,35.043,33.219,Country,
+0fe2ebfb-0eb4-4f42-8ec4-628d26f61f77,Dhekelia Sovereign Base Area,Dhekelia Base,,,Miscellaneous,
+13615776-7d7e-11de-9ae2-0019e336be3a,Tanzania,TZ,-6.27,34.823,Country,
+12bee8d8-7d7e-11de-9ae2-0019e336be3a,Botswana,BW,-22.182,23.815,Country,
+0cb02330-7d7e-11de-9ae2-0019e336be3a,Cayman Islands,KY,19.314,-81.198,Country,
+152d7e40-7d7e-11de-9ae2-0019e336be3a,Svalbard and Jan Mayen,SJ,78.8296488647,18.3744034941,Country,
+39c8f992-22b7-4d59-9be0-eb461b36df2f,Canada without Alberta,Canada without Alberta,,,ecoinvent Custom Area,"CA-BC; CA-MB; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; IAI Area, North America, without Quebec; MRO; North America without Quebec; NPCC; Québec, HQ distribution network; WECC"
+1b5afe13-e071-4c8a-81b5-68eb8982053f,"India, Chandigarh",IN-CH,,,Province or State,
+96e0124a-b1b0-4303-b26c-44ee5857f3a1,"Australia, Australian Capital Territory",AU-ACT,,,Province or State,
+0c0d5768-7d7e-11de-9ae2-0019e336be3a,Cambodia,KH,12.714,104.564,Country,
+146af956-7d7e-11de-9ae2-0019e336be3a,Eswatini,SZ,-26.562,31.497,Country,
+2a19941e-dd11-44b4-919f-fb33c9150b71,"China, Hubei (湖北)",CN-HU,,,Province or State,
+26bf514e-e62c-11de-ba56-0019e336be3a,Micronesia,UN-MICRONESIA,7.54880723118,94.3894285779,UN Subregion,FM; GU; KI; MH; MP; NR; PW
+0eed3c64-7d7e-11de-9ae2-0019e336be3a,Jamaica,JM,18.151,-77.32,Country,
+0ec6dff6-7d7e-11de-9ae2-0019e336be3a,Ivory Coast,CI,7.632,-5.556,Country,
+a9c3be27-affe-464c-8ebf-996d8ab6a958,Alaska Systems Coordinating Council,US-ASCC,60.5327829034,-143.141803538,Electricity Grid,US-AK
+6a1e0054-4990-4d43-b7e4-e3d9a595a275,Europe without Switzerland and France,Europe without Switzerland and France,,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland and Austria; Europe, without Russia and Türkiye; FI; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+0fa9a53e-7d7e-11de-9ae2-0019e336be3a,Mexico,MX,23.951,-102.535,Country,
+0e6a7860-7d7e-11de-9ae2-0019e336be3a,India,IN,21,78.5,Country,IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid
+4eb91d59-44f6-4ec6-9f21-0c48bcf3becf,Serbia and Montenegro,CS,43.8674682931,20.5992884506,Miscellaneous,"IAI Area, Russia & RER w/o EU27 & EFTA; ME; RS"
+0f1fdb74-7d7e-11de-9ae2-0019e336be3a,Kazakhstan,KZ,48.16,67.301,Country,
+f9221622-cc45-11de-98ed-0019e336be3a,Europe without Switzerland,Europe without Switzerland,48.5975083916,6.42110325623,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+0e4809f6-7d7e-11de-9ae2-0019e336be3a,Honduras,HN,14.819,-86.863,Country,
+0d3920fe-7d7e-11de-9ae2-0019e336be3a,Ethiopia,ET,8.626,39.616,Country,
+862723a2-2563-490a-9b7a-7206cb46fcb1,"Brazil, Rio de Janeiro",BR-RJ,,,Province or State,
+4aa2a59b-aed0-4438-9db4-960357820659,Cyprus No Mans Area,Cyprus No Mans Area,,,Miscellaneous,
+0fd0c588-7d7e-11de-9ae2-0019e336be3a,Malawi,MW,-13.4,33.808,Country,
+761f191a-af54-47b8-8e42-5bed90017b8d,"United States of America, Kentucky",US-KY,,,Province or State,US-RFC; US-SERC
+763ca99d-f561-45ef-8d36-84cb877f9c08,"India, Himachal Pradesh",IN-HP,,,Province or State,
+8a80d1d2-de76-44e0-a3d3-46b98c053ca1,"India, Southern grid",IN-Southern grid,,,Electricity Grid,IN-AP; IN-KA; IN-KL; IN-PY; IN-TN
+0f2f07ac-7d7e-11de-9ae2-0019e336be3a,Laos,LA,19.905,102.471,Country,
+0f848e98-7d7e-11de-9ae2-0019e336be3a,Morocco,MA,32.706,-5.758,Country,
+a7ba1868-375a-4d62-9048-bdf2136447c4,"Brazil, São Paulo",BR-SP,,,Province or State,
+129718da-7d7e-11de-9ae2-0019e336be3a,Rwanda,RW,-1.998,29.917,Country,
+3dc3c9af-74a3-472e-8af9-070146a3eec9,Siachen Glacier,Siachen Glacier,,,Miscellaneous,
+0c852cde-7d7e-11de-9ae2-0019e336be3a,Chile,CL,-23.389,-69.433,Country,
+886e8d1a-613d-4086-ba9f-314a2bff2f40,"United States of America, Pennsylvania",US-PA,,,Province or State,
+0d04edb6-7d7e-11de-9ae2-0019e336be3a,Dominica,DM,15.475,-61.356,Country,
+59003ab7-b40a-43ac-b7c9-3e3e8907803e,"India, Northern grid",IN-Northern grid,,,Electricity Grid,IN-CH; IN-DL; IN-HP; IN-HR; IN-JK; IN-PB; IN-RJ; IN-UP; IN-UT
+5ba6d534-2083-4167-975d-84579c9e5202,"India, Bihar",IN-BR,,,Province or State,
+c2bb7d7f-6242-4b3c-98cd-62b03f7a8be3,"Australia, South Australia",AU-SA,,,Province or State,
+10c7c482-7d7e-11de-9ae2-0019e336be3a,Christmas Island,CX,-10.444,105.704,Country,
+1541988a-7d7e-11de-9ae2-0019e336be3a,Guernsey,GG,49.459,-2.576,Country,
+4d22983c-e62c-11de-ba56-0019e336be3a,Polynesia,UN-POLYNESIA,-15.2991323878,-158.90462565,UN Subregion,AS; CK; NU; PF; PN; TK; TO; TV; WS
+7441e29d-0a88-49fa-8ce4-eeb7f1949f2f,"Australia, Victoria",AU-VIC,,,Province or State,
+13725fee-7d7e-11de-9ae2-0019e336be3a,United Kingdom,GB,53,-1.6,Country,
+0ecd6952-7d7e-11de-9ae2-0019e336be3a,Iraq,IQ,33.048,43.772,Country,
+047116e2-d932-11de-9627-0019e336be3a,North American Free Trade Agreement,NAFTA,53.425457874,-104.015961963,ecoinvent Region,"CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; IAI Area, North America; IAI Area, North America, without Quebec; MRO; MX; North America without Quebec; NPCC; Québec, HQ distribution network; RLA; RNA; UN-CAMERICA; UN-CARIBBEAN; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-PR; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC"
+df7d08ae-6f20-4095-96e6-3d9cc6f49263,"Brazil, South-eastern grid",BR-South-eastern grid,,,Electricity Grid,BR-ES; BR-MG; BR-RJ; BR-SP
+7abf336a-09c3-487b-bdc3-989bbe50ee05,Akrotiri Sovereign Base Area,Akrotiri,,,Miscellaneous,
+098771a4-7d7e-11de-9ae2-0019e336be3a,Angola,AO,-12.296,17.544,Country,
+1013310c-7d7e-11de-9ae2-0019e336be3a,Monaco,MC,43.75,7.412,Country,
+0a13f5c0-7d7e-11de-9ae2-0019e336be3a,Benin,BJ,10.541,2.469,Country,
+11258d1a-7d7e-11de-9ae2-0019e336be3a,New Zealand,NZ,-42.634,172.235,Country,
+150266d8-7d7e-11de-9ae2-0019e336be3a,Pitcairn Islands,PN,-24.366,-128.316,Country,
+1420c7f0-7d7e-11de-9ae2-0019e336be3a,Burkina Faso,BF,12.278,-1.74,Country,
+153b614a-7d7e-11de-9ae2-0019e336be3a,Saint Martin,MF,18.094,-63.041,Country,
+131dd2ee-7d7e-11de-9ae2-0019e336be3a,Thailand,TH,15.7,100.844,Country,
+0d083d04-7d7e-11de-9ae2-0019e336be3a,Dominican Republic,DO,19.015,-70.729,Country,
+ae30ab76-bfa2-59fb-bccc-1ad0246cd7b3,"China, North Grid",CN-NCGC,,,Electricity Grid,China w/o Inner Mongol; CN-BJ; CN-HB; CN-NM; CN-SD; CN-SX; CN-TJ
+30e68c9c-7e2a-11de-9820-0019e336be3a,Southern Asia,SAS,7.9333408562,109.936790036,UN Subregion,"AF; BD; BT; IAI Area, Asia, without China and GCC; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IR; LK; MV; NP; PK; RME; Siachen Glacier; UN-WASIA"
+c59de648-8f45-40a3-a479-191e3f558996,"United States of America, Georgia",US-GA,,,Province or State,
+cc63eb09-90af-4ab4-b81c-0c3c7dec25d0,"United States of America, Texas",US-TX,,,Province or State,MRO; US-MRO; US-SERC; US-TRE; US-WECC; WECC
+115546c2-7d7e-11de-9ae2-0019e336be3a,Panama,PA,8.384,-80.92,Country,
+fc467bec-d8f0-11de-b1d3-0019e336be3a,Central America,UN-CAMERICA,21.8095940381,-99.2511306382,UN Subregion,BZ; CR; GT; HN; MX; NAFTA; NI; PA; SV
+929f1a52-bb4d-4a86-8439-6b01d8813196,"Brazil, Bahia",BR-BA,,,Province or State,
+10c45112-7d7e-11de-9ae2-0019e336be3a,British Indian Ocean Territory,IO,-7.335,72.416,Country,
+dd2330a8-30dc-4af9-bb3a-d2d2bf404dde,"Brazil, Southern grid",BR-Southern grid,,,Electricity Grid,BR-PR; BR-RS; BR-SC
+1799e32a-b029-4981-ab1b-1cd932c1e64b,"Australia, Jervis Bay Territory",AU-JBT,,,Province or State,
+0ebb28b4-7d7e-11de-9ae2-0019e336be3a,Italy,IT,42.7,12.8,Country,
+144e6f5c-7d7e-11de-9ae2-0019e336be3a,Vietnam,VN,21.491,105.314,Country,
+aae610ca-cdef-4c81-9631-ded55d455444,"Canada, Manitoba",CA-MB,,,Province or State,
+0e1a52e0-7d7e-11de-9ae2-0019e336be3a,Guam,GU,13.385,144.707,Country,
+1301c428-7d7e-11de-9ae2-0019e336be3a,Sweden,SE,62.011,15.27,Country,
+87b165cf-8b3c-4289-807e-4512b4fb2b2f,Caribbean,UN-CARIBBEAN,,,UN Subregion,"AG; AI; AW; BB; BL; BQ; CU; CW; DM; DO; France, including overseas territories; GD; GP; HT; JM; KN; KY; LC; MF; MQ; MS; NAFTA; SX; TC; TT; US-PR; VC; VG; VI"
+2b2ddda2-bb8e-42f7-82e5-013cc04f7bc5,"China, Shandong (山东)",CN-SD,,,Province or State,
+e3aa6506-9887-4e27-9102-b3671e430090,"Canada, Saskatchewan",CA-SK,,,Province or State,
+0c608726-7d7e-11de-9ae2-0019e336be3a,Afghanistan,AF,33.677,65.216,Country,
+0f9402ce-7d7e-11de-9ae2-0019e336be3a,Malta,MT,35.89,14.442,Country,
+0d512a50-7d7e-11de-9ae2-0019e336be3a,Finland,FI,64.504,26.272,Country,
+0cb47d54-7d7e-11de-9ae2-0019e336be3a,Cameroon,CM,5.133,12.277,Country,
+161ff7b5-7ecf-4021-8fff-5def0bf2b27e,"Australia, including overseas territories","Australia, including overseas territorie",,,Country,
+102a1b92-7d7e-11de-9ae2-0019e336be3a,Cocos (Keeling) Islands,CC,-12.173,96.839,Country,
+0e5d5856-7d7e-11de-9ae2-0019e336be3a,Iceland,IS,64.764,-18.48,Country,
+598f9aa4-e409-11de-bce5-0019e336be3a,HICC,US-HICC,20.2519006094,-156.350435076,Electricity Grid,US-HI
+0d95a34c-7d7e-11de-9ae2-0019e336be3a,Ghana,GH,7.96,-1.207,Country,
+0f759550-7d7e-11de-9ae2-0019e336be3a,Montserrat,MS,16.736,-62.187,Country,
+0d627bf2-7d7e-11de-9ae2-0019e336be3a,Falkland Islands,FK,-51.665,-58.694,Country,
+aab06382-a476-4bec-a78b-d2fc0b849980,North America without Quebec,North America without Quebec,,,ecoinvent Custom Area,"CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-SK; CA-YK; IAI Area, North America, without Quebec; MRO; NPCC; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC"
+4ebadc58-485e-4742-86bb-11b324dfebf4,"United States of America, Indiana",US-IN,,,Province or State,
+117936fe-7d7e-11de-9ae2-0019e336be3a,Qatar,QA,25.316,51.191,Country,
+4024933b-d7a2-4ebb-87dc-80460ff13c50,"India, Rajasthan",IN-RJ,,,Province or State,
+f5c62675-f6ae-4bc4-8c9b-3b737ef2ea53,"China, Jiangxi (江西)",CN-JX,,,Province or State,
+e8a978ab-a183-4ce7-b791-760190d8a63c,"China, Xinjiang (新疆维吾尔自治区)",CN-XJ,,,Province or State,
+2a7e9ed2-4de5-4b28-9b4e-b12c50a1ed53,"Brazil, Roraima",BR-RR,,,Province or State,
+0f9f2f00-7d7e-11de-9ae2-0019e336be3a,Maldives,MV,3.548,72.92,Country,
+1019325a-7d7e-11de-9ae2-0019e336be3a,Palestine,PS,32.037,35.278,Country,
+a959ec4b-3db6-4b9f-9ea6-897fbcfdc610,"China, Zhejiang (浙江)",CN-ZJ,,,Province or State,
+0f46d4ea-7d7e-11de-9ae2-0019e336be3a,Lithuania,LT,55.336,23.897,Country,
+c079ba9b-dc27-45f0-96b5-a3dd168de8ed,"China, Xizang (西藏自治区)",CN-XZ,,,Province or State,CN-SWG
+4645f771-3596-4c42-ba0f-822d1ce2fb72,"Brazil, Santa Catarina",BR-SC,,,Province or State,
+43c4f591-2b61-4145-a9f6-e10b4349c2cd,Bajo Nuevo Bank (Petrel Is.),Bajo Nuevo,,,Miscellaneous,
+12c6a37a-7d7e-11de-9ae2-0019e336be3a,Senegal,SN,15.013,-14.881,Country,
+4a07e727-a1e5-4079-8433-b1d2b5ed544c,"India, Islands",IN-Islands,,,Electricity Grid,IN-AN; IN-LD
+8dbe7fbe-7375-4cb0-a1a2-6d55bc55e86e,"United States of America, Florida",US-FL,,,Province or State,
+26e353a9-dac6-4123-833d-75cd720d9e19,"India, North-eastern grid",IN-North-eastern grid,,,Electricity Grid,IN-AR; IN-AS; IN-ML; IN-MN; IN-MZ; IN-NL; IN-TR
+110f1ea4-7d7e-11de-9ae2-0019e336be3a,Nepal,NP,28.253,83.939,Country,
+7f9bc659-76be-4030-b000-742494310a5d,"United States of America, Rhode Island",US-RI,,,Province or State,
+0d8feaa6-7d7e-11de-9ae2-0019e336be3a,Georgia,GE,42.176,43.518,Country,
+0ffb63d8-7d7e-11de-9ae2-0019e336be3a,Northern Mariana Islands,MP,15.005,145.623,Country,
+6432879f-dc31-4e80-bc55-573f72dafee8,"Midwest Reliability Organization, US part only",US-MRO,,,Electricity Grid,US-AR; US-IA; US-IL; US-KS; US-LA; US-MN; US-MO; US-MT; US-ND; US-NE; US-NM; US-OK; US-SD; US-TX; US-WI
+e60b420e-88d2-11de-99d3-0019e336be3a,Middle Africa,UN-MAFRICA,0.631925242963,19.4720488185,UN Subregion,"AO; CD; CF; CG; CM; GA; GQ; IAI Area, Africa; ST; TD"
+b5b34218-bee7-4196-b70c-1b5ad433801a,"Canada, Prince Edward Island",CA-PE,,,Province or State,
+0e422e82-7d7e-11de-9ae2-0019e336be3a,Haiti,HT,19.142,-72.278,Country,
+0d3f4416-7d7e-11de-9ae2-0019e336be3a,Austria,AT,47.683,14.912,Country,
+0cf950f0-7d7e-11de-9ae2-0019e336be3a,Denmark,DK,56.058,9.264,Country,Europe without NORDEL (NCPA); NORDEL; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France
+0cbbba9c-7d7e-11de-9ae2-0019e336be3a,Chad,TD,15.361,18.665,Country,
+11738740-7d7e-11de-9ae2-0019e336be3a,Guinea Bissau,GW,12.125,-14.651,Country,
+3af78f04-f008-43fd-8e29-dccfba3075c7,Western Electricity Coordinating Council,WECC,46.6002120409,-116.200187823,Electricity Grid,CA; CA-AB; CA-BC; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; MRO; US; US-AZ; US-CA; US-CO; US-ID; US-MT; US-NE; US-NM; US-NV; US-OR; US-SD; US-TX; US-UT; US-WA; US-WECC; US-WY
+e89dc6f4-88d2-11de-99d3-0019e336be3a,Western Africa,UN-WAFRICA,14.7414136183,-1.1785251683,UN Subregion,"BF; BJ; CV; GH; GM; GN; GW; IAI Area, Africa; LR; ML; MR; NE; NG; SH; SL; SN; TG"
+12f773b0-7d7e-11de-9ae2-0019e336be3a,Sudan,SD,13.832,30.05,Country,
+10207fa6-7d7e-11de-9ae2-0019e336be3a,Mayotte,YT,-12.777,45.155,Country,
+89f88c37-befd-49fa-92ad-35875a6709eb,"India, Chhattisgarh",IN-CT,,,Province or State,
+8cd8dbae-aa08-44b0-be67-6ed7e876cedd,"Canada, Nova Scotia",CA-NS,,,Province or State,
+0a1ab78e-7d7e-11de-9ae2-0019e336be3a,Solomon Islands,SB,-9.611,160.109,Country,
+145e04ee-7d7e-11de-9ae2-0019e336be3a,Namibia,NA,-22.133,17.218,Country,
+57c8c52c-88d5-11de-99d3-0019e336be3a,Southern Europe,UN-SEUROPE,41.4852158506,7.317939892,UN Subregion,"AD; AL; BA; Canary Islands; CS; ENTSO-E; ES; GI; GR; HR; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IT; ME; MK; MT; PT; RER w/o AT+BE+CH+DE+FR+IT; RS; SI; SM; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; VA; XK"
+ee4baa34-3c79-4919-9393-c5d8a9015674,"Australia, New South Wales",AU-NSW,,,Province or State,
+15099fa2-7d7e-11de-9ae2-0019e336be3a,Marshall Islands,MH,7.595,168.963,Country,
+2f693dc6-7e28-11de-9820-0019e336be3a,Africa,RAF,6.41788156451,18.287021196,UN Region,"AO; BF; BI; BJ; BW; CD; CF; CG; CM; CV; DJ; DZ; EG; EH; ER; ET; France, including overseas territories; GA; GH; GM; GN; GQ; GW; IAI Area, Africa; KE; KM; LR; LS; LY; MA; MG; ML; MR; MU; MW; MZ; NA; NE; NG; RE; RW; SC; SD; SH; SL; SN; SO; Somaliland; SS; ST; SZ; TD; TG; TN; TZ; UG; UN-EAFRICA; UN-MAFRICA; UN-NAFRICA; UN-SAFRICA; UN-WAFRICA; YT; ZA; ZM; ZW"
+572aa631-8a25-4c16-b437-2ee0672c450d,"Brazil, Northern grid",BR-Northern grid,,,Electricity Grid,BR-AC; BR-AM; BR-AP; BR-PA; BR-RO; BR-RR; BR-TO
+d9497730-f613-4d31-aab2-1d82add2d1bc,"Brazil, Rondônia",BR-RO,,,Province or State,
+14480004-7d7e-11de-9ae2-0019e336be3a,British Virgin Islands,VG,18.5099568045,-64.4818926621,Country,
+c231d8f9-39e9-408c-9884-8508b8f9baf7,"Québec, Hydro-Québec distribution network","Québec, HQ distribution network",50.4994008308,-72.3896091361,Electricity Grid,CA-QC
+01fcfa20-03c3-4d3c-ba62-69a60afb5759,"United States of America, Tennessee",US-TN,,,Province or State,
+ae2ca200-3008-48a6-b85b-00edb7bf9f34,"United States of America, Delaware",US-DE,,,Province or State,
+1317a572-7d7e-11de-9ae2-0019e336be3a,Trinidad and Tobago,TT,10.468,-61.253,Country,
+0e2fbd60-7d7e-11de-9ae2-0019e336be3a,Guatemala,GT,15.256,-90.398,Country,
+6d696e3b-ac91-486c-8f04-349c496915ae,Russia (Asia),Russia (Asia),,,ecoinvent Region,
+3624a72f-ca5a-48d6-be41-27e705be5b61,"Australia, Queensland",AU-QLD,,,Province or State,
+4a15b2ab-5593-48d7-a7b9-b1c07c5ca99b,"China, Shanghai (上海)",CN-SH,,,Province or State,
+09951f84-7d7e-11de-9ae2-0019e336be3a,Argentina,AR,-35.377,-65.167,Country,
+10b7703c-7d7e-11de-9ae2-0019e336be3a,Bouvet Island,BV,-54.422,3.412,Country,
+0dc048d6-7d7e-11de-9ae2-0019e336be3a,Greenland,GL,74.719,-41.391,Country,
+15146d88-7d7e-11de-9ae2-0019e336be3a,San Marino,SM,43.942,12.46,Country,
+10cf3776-7d7e-11de-9ae2-0019e336be3a,Vanuatu,VU,-15.376,166.899,Country,
+5d7486b1-a50c-4c86-8dd3-ce9773bd2bab,"United States of America, California",US-CA,,,Province or State,
+53b04726-ffcb-4dc7-97ab-85e7fd150d17,"United States of America, Nebraska",US-NE,,,Province or State,MRO; US-MRO; US-WECC; WECC
+0c13823c-7d7e-11de-9ae2-0019e336be3a,Sri Lanka,LK,7.612,80.704,Country,
+154d2934-7d7e-11de-9ae2-0019e336be3a,Taiwan,TW,23.7537043927,120.946207233,Miscellaneous,
+14f2285e-7d7e-11de-9ae2-0019e336be3a,Guadeloupe,GP,16.286,-61.441,Country,
+77849b53-31ea-4b25-93e5-451909753ad3,"India, West Bengal",IN-WB,,,Province or State,
+2221b78c-5a1c-454c-a637-744d54a0bbe9,"India, Jharkhand",IN-JH,,,Province or State,
+06422af3-6431-4f6f-a555-7c0e008bce8b,"China, Qinghai (青海)",CN-QH,,,Province or State,
+fe0113e8-7e2d-11de-9820-0019e336be3a,Nordic Countries Power Association,NORDEL,63.7641163015,18.8837373748,Electricity Grid,"DK; FI; IAI Area, EU27 & EFTA; NO; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; SE"
+111cdba2-7d7e-11de-9ae2-0019e336be3a,Nicaragua,NI,12.84,-85.034,Country,
+d48cee40-0ff1-49d6-a80d-9e0be3e0c2f6,Northeast Power Coordinating Council,NPCC,51.2575217691,-76.3224748286,Electricity Grid,"CA; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NS; CA-ON; CA-PE; CA-QC; IAI Area, North America, without Quebec; North America without Quebec; Québec, HQ distribution network; US; US-CT; US-MA; US-ME; US-NH; US-NPCC; US-NY; US-RI; US-VT"
+10105c52-7d7e-11de-9ae2-0019e336be3a,Macao S.A.R,MO,22.2,113.545,Country,
+446707ca-ceb0-4e24-b794-73e95e6154c0,"IAI Area, North America","IAI Area, North America",,,Aluminium Industry,"CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; IAI Area, North America, without Quebec; MRO; North America without Quebec; NPCC; Québec, HQ distribution network; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC"
+0d245584-7d7e-11de-9ae2-0019e336be3a,Equatorial Guinea,GQ,1.607,10.488,Country,
+8bf9c359-354b-4334-a329-633004c85d3c,"United States of America, New Mexico",US-NM,,,Province or State,MRO; US-MRO; US-WECC; WECC
+21b47bba-7f1b-4c4c-ac3e-75cc1ad33231,"United States of America, Illinois",US-IL,,,Province or State,MRO; US-MRO; US-RFC; US-SERC
+1238ec0d-4167-453a-9ec5-50cfef0782a1,"China, Sichuan (四川)",CN-SC,,,Province or State,
+12e2e22e-7d7e-11de-9ae2-0019e336be3a,Somalia,SO,9.774,48.316,Country,
+1510fb80-7d7e-11de-9ae2-0019e336be3a,Saint Helena,SH,-15.953,-5.71,Country,
+2ea604e6-e5e8-11de-8102-0019e336be3a,Americas,UN-AMERICAS,35.5487612419,-83.1088762649,UN Region,"AG; AI; AR; AW; BB; BL; BM; BO; BQ; BR; BR-AC; BR-AL; BR-AM; BR-AP; BR-BA; BR-CE; BR-DF; BR-ES; BR-GO; BR-MA; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-North-eastern grid; BR-Northern grid; BR-PA; BR-PB; BR-PE; BR-PI; BR-PR; BR-RJ; BR-RN; BR-RO; BR-RR; BR-RS; BR-SC; BR-SE; BR-South-eastern grid; BR-South-eastern/Mid-western grid; BR-Southern grid; BR-SP; BR-TO; BZ; CA; CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-QC; CA-SK; CA-YK; CL; CO; CR; CU; CW; DM; DO; EC; FK; France, including overseas territories; GD; GF; GL; GP; GT; GY; HN; HT; IAI Area, North America; IAI Area, North America, without Quebec; IAI Area, South America; JM; KN; KY; LC; MF; MQ; MRO; MS; MX; NAFTA; NI; North America without Quebec; NPCC; PA; PE; PM; PY; Québec, HQ distribution network; RLA; RNA; SR; SV; SX; TC; TT; UN-CAMERICA; UN-CARIBBEAN; UN-SAMERICA; US; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-PR; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; UY; VC; VE; VG; VI; WECC"
+130d4f28-7d7e-11de-9ae2-0019e336be3a,Syria,SY,35.013,38.506,Country,
+0fc981f0-eb14-436c-834f-c6ce005a4dc4,"IAI Area, Russia & Europe outside EU27 & EFTA","IAI Area, Russia & RER w/o EU27 & EFTA",,,Aluminium Industry,"Asia without China; BA; CS; ENTSO-E; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FSU; ME; RAS; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RU; Russia (Asia); Russia (Europe); UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-SEUROPE"
+f41e84aa-2c80-451e-a7ab-594acc1b096d,"China, Yunnan (云南)",CN-YN,,,Province or State,
+251a2d08-d031-4589-9318-029ba543abde,"Brazil, Acre",BR-AC,,,Province or State,
+131278d6-7d7e-11de-9ae2-0019e336be3a,Switzerland,CH,46.861,7.908,Country,
+1009d666-7d7e-11de-9ae2-0019e336be3a,Isle of Man,IM,54.229,-4.527,Country,
+01c44dfa-113d-427b-81b9-1d4fde230f93,"India, Sikkim",IN-SK,,,Province or State,
+00e9e1a4-0cf8-4f07-8bad-fd782ed54382,"Brazil, Minas Gerais",BR-MG,,,Province or State,
+c428af56-39c0-4dca-a617-8716b52a6640,"Europe without Austria, Belgium, France, Germany, Italy, Liechtenstein, Monaco, San Marino, Switzerland, and the Vatican",RER w/o AT+BE+CH+DE+FR+IT,56.7968574951,31.3090547185,ecoinvent Custom Area,"AD; AL; AX; BA; BALTSO; BG; BY; Canary Islands; CENTREL; CS; CZ; DK; EE; ENTSO-E; ES; Europe without NORDEL (NCPA); Europe, without Russia and Türkiye; FI; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; JE; LT; LU; LV; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SE; SI; SJ; SK; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; WEU; XK"
+533c318c-a189-4fc6-84a8-e9d48eab987c,"Canada, British Columbia",CA-BC,,,Province or State,
+fb4bde60-e62b-11de-ba56-0019e336be3a,Australia and New Zealand,UN-AUSTRALIANZ,-26.3822685337,135.9868509,UN Subregion,AU; AU-ACT; AU-JBT; AU-NSW; AU-NT; AU-QLD; AU-SA; AU-TAS; AU-VIC; AU-WA; NF; NZ
+8cd18b82-fdd2-4cf9-87c8-33e125b675f4,"Brazil, Rio Grande do Norte",BR-RN,,,Province or State,
+aa97629e-e94b-4270-a042-979d38785ecd,Scarborough Reef,Scarborough Reef,,,Miscellaneous,
+0d349e44-7d7e-11de-9ae2-0019e336be3a,El Salvador,SV,13.736,-88.866,Country,
+4c9baec2-f9fc-4f36-84f7-a3ed2eab82a1,"China, State Grid Corporation of China",CN-SGCC,,,Electricity Grid,China w/o Inner Mongol; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-ECGC; CN-FJ; CN-GS; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-ZJ
+0d4ac2be-7d7e-11de-9ae2-0019e336be3a,French Guiana,GF,3.924,-53.241,Country,
+1436d536-7d7e-11de-9ae2-0019e336be3a,Saint Vincent and the Grenadines,VC,13.248,-61.194,Country,
+cab4fbd7-e8ae-4ea6-9e74-0e41df667c61,"India, Mizoram",IN-MZ,,,Province or State,
+2d9cae4c-ebc2-4f5f-8ba1-0070559cb32a,"United States of America, South Carolina",US-SC,,,Province or State,
+dd10b4f5-3c51-4c62-9b32-a111e15e3e52,"China, Hainan (海南)",CN-HA,,,Province or State,
+0a06dd7c-7d7e-11de-9ae2-0019e336be3a,Myanmar,MM,21.718,96.041,Country,
+0f7b1e31-0d0b-404a-994b-e3cd1b7586f0,"China, Heilongjiang (黑龙江省)",CN-HL,,,Province or State,
+6eaa35ce-47d2-4c3d-9079-12adc7ffb375,"Brazil, Maranhão",BR-MA,,,Province or State,
+097c2556-7d7e-11de-9ae2-0019e336be3a,Albania,AL,41.143,20.068,Country,
+0ae22e97-4563-473f-9209-3221544a097f,"Australia, Western Australia",AU-WA,,,Province or State,
+92f428e3-0631-408a-bb78-7cc010f272ca,Northern Cyprus,Northern Cyprus,,,Miscellaneous,
+1117f7f4-7d7e-11de-9ae2-0019e336be3a,Suriname,SR,4.127,-55.912,Country,
+0cec2628-7d7e-11de-9ae2-0019e336be3a,Cape Verde,CV,15.071,-23.634,Country,
+12ea642c-7d7e-11de-9ae2-0019e336be3a,Spain,ES,40.227,-3.649,Country,Canary Islands
+d5231e2f-479b-4f21-9173-35beeaf2406a,"China, Gansu (甘肃)",CN-GS,,,Province or State,
+70c9eee0-7dc4-4e2f-8dcc-f6bc4358ead9,"Brazil, Piauí",BR-PI,,,Province or State,
+095ec4f2-7d7e-11de-9ae2-0019e336be3a,Algeria,DZ,28.163,2.632,Country,
+ae2be714-8cbe-4abd-afac-a5e7ca2b0d55,"India, Uttar Pradesh",IN-UP,,,Province or State,
+09e8ed3a-7d7e-11de-9ae2-0019e336be3a,Bangladesh,BD,24.218,89.941,Country,
+1544d680-7d7e-11de-9ae2-0019e336be3a,Jersey,JE,49.219,-2.129,Country,
+23baa40a-53e2-4d6c-a61e-a412c2b7aaae,"Brazil, Mato Grosso do Sul",BR-MS,,,Province or State,
+567d4ce8-81a3-4303-b6b1-7caa97a49680,"United States of America, Massachusetts",US-MA,,,Province or State,
+0fefde28-7d7e-11de-9ae2-0019e336be3a,Anguilla,AI,18.237,-63.032,Country,
+c65371a5-fd9a-4ca9-ae24-c4fde6615445,"Brazil, Distrito Federal",BR-DF,,,Province or State,
+0d28a62a-7d7e-11de-9ae2-0019e336be3a,Estonia,EE,58.674,25.793,Country,
+11813638-7d7e-11de-9ae2-0019e336be3a,Romania,RO,45.844,24.969,Country,
+50ec320c-88d5-11de-99d3-0019e336be3a,Eastern Europe,UN-EEUROPE,60.9882831546,92.1393690129,UN Subregion,"Asia without China; BG; BY; CENTREL; CZ; ENTSO-E; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FSU; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; MD; PL; RAS; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RU; Russia (Asia); Russia (Europe); SK; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France"
+10d6bc3a-7d7e-11de-9ae2-0019e336be3a,Nigeria,NG,9.594,8.105,Country,
+77b2f7ee-3f79-4946-a2d7-50c46d1756d2,"IAI Area, Asia, without China and GCC","IAI Area, Asia, without China and GCC",,,Aluminium Industry,AZ; Central Asia; FSU; ID; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IR; JP; KP; KZ; RME; SAS; Siachen Glacier; TJ; TR; UN-EASIA; UN-SEASIA; UN-WASIA
+a2d4e588-e0d1-11de-823b-0019e336be3a,Europe without NORDEL (NCPA),Europe without NORDEL (NCPA),54.0646438595,29.6744292776,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; Europe, without Russia and Türkiye; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RER w/o RU; RO; RS; RU; Russia (Europe); SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+7ae6d206-a642-4775-a362-6d941033ce51,"United States of America, Nevada",US-NV,,,Province or State,
+dbee0af4-00e0-4280-a377-414d0a39998e,"Australia, Northern Territory",AU-NT,,,Province or State,
+0fdb5bec-7d7e-11de-9ae2-0019e336be3a,New Caledonia,NC,-21.359,165.447,Country,
+a64ba70d-b110-4f81-b415-299c0c193faa,"Brazil, Pernambuco",BR-PE,,,Province or State,
+0c40fa1e-7d7e-11de-9ae2-0019e336be3a,China,CN,33.42,106.514,Country,China w/o Inner Mongol; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ
+03374b13-9a75-45a0-a630-6f80fbbb0d79,"United States of America, Maine",US-ME,,,Province or State,
+1eb1f8b3-8c35-425e-94ca-cf502eb004c3,"India, Eastern grid",IN-Eastern grid,,,Electricity Grid,IN-BR; IN-JH; IN-OR; IN-SK; IN-WB
+c6b0afc2-8321-49aa-81f3-a793417eed91,"China, Guangxi (广西壮族自治区)",CN-GX,,,Province or State,
+d6bf166c-b5aa-45a6-b0e9-7c169d2c7cbc,"India, Manipur",IN-MN,,,Province or State,
+909aae3b-d802-4626-a75e-f0d48dba9812,"United States of America, District of Columbia",US-DC,,,Province or State,
+0c193b28-7d7e-11de-9ae2-0019e336be3a,Congo,CG,-0.055,15.986,Country,
+12a2ee3a-7d7e-11de-9ae2-0019e336be3a,Saint Kitts and Nevis,KN,17.34,-62.769,Country,
+39185d7c-a546-424b-8605-6bc8e94e109f,Midwest Reliability Organization,MRO,,,Electricity Grid,CA; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; Canada without Quebec; CA-SK; US; US-AR; US-IA; US-IL; US-KS; US-LA; US-MN; US-MO; US-MRO; US-MT; US-ND; US-NE; US-NM; US-OK; US-SD; US-TX; US-WECC; US-WI; WECC
+10f1ec30-7d7e-11de-9ae2-0019e336be3a,Norway,NO,61.152,8.74,Country,
+0f78e944-7d7e-11de-9ae2-0019e336be3a,North Macedonia,MK,41.5997125241,21.6981140778,Country,
+c670b4a0-6051-4935-bafe-866736a010a9,"Europe, without Russia and Türkiye","Europe, without Russia and Türkiye",,,ecoinvent Custom Area,"AD; AL; AT; AX; BA; BALTSO; BE; BG; BY; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ENTSO-E; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FI; FR; France, including overseas territories; FSU; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; MD; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SE; SI; SJ; SK; SM; UA; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+bf5150ab-4ff1-479e-91ae-b88a1c2519a7,"United States of America, North Carolina",US-NC,,,Province or State,
+0c67c0cc-7d7e-11de-9ae2-0019e336be3a,Bhutan,BT,27.415,90.429,Country,
+0d1de104-7d7e-11de-9ae2-0019e336be3a,Ireland,IE,53.177,-8.152,Country,
+548bd19c-88d5-11de-99d3-0019e336be3a,Northern Europe,UN-NEUROPE,63.0698630469,13.8010098598,UN Subregion,"AX; BALTSO; DK; EE; Europe without NORDEL (NCPA); FI; GB; GG; IAI Area, EU27 & EFTA; IE; IM; IS; JE; LT; LV; NO; NORDEL; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; SE; SJ; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France"
+de26c625-ae68-4c9e-8fde-a6c33b3dfe14,"India, Delhi",IN-DL,,,Province or State,
+0f3a36f4-7d7e-11de-9ae2-0019e336be3a,Latvia,LV,56.858,25.641,Country,
+129c6a88-7d7e-11de-9ae2-0019e336be3a,Saudi Arabia,SA,24.023,44.585,Country,
+b6ec5424-a43b-5e34-a8ca-f35abb031049,"China, East Grid",CN-ECGC,,,Electricity Grid,CN-AH; CN-FJ; CN-JS; CN-JX; CN-SH; CN-ZJ
+3b2c2140-c25c-47c5-876d-78e5dc82f066,"Brazil, Paraná",BR-PR,,,Province or State,
+dde7310e-e0d0-11de-823b-0019e336be3a,UCTE without Germany,UCTE without Germany,45.450612256,10.9203583995,Electricity Grid,"AD; AT; BA; BE; BG; Canary Islands; CENTREL; CH; CS; CZ; DK; ES; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FR; France, including overseas territories; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IT; LI; LU; MC; ME; MK; NL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SI; SK; SM; UCTE without France; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+744e0bff-1149-4c95-bea7-74792bc71a21,"Brazil, Amapá",BR-AP,,,Province or State,
+0ef4e126-7d7e-11de-9ae2-0019e336be3a,Kenya,KE,0.53,37.858,Country,
+d732da9a-2e3b-4a4e-8324-c0bbe6d42014,"United States of America, Maryland",US-MD,,,Province or State,
+133bfb7a-7d7e-11de-9ae2-0019e336be3a,Sao Tome and Principe,ST,0.201,6.629,Country,
+b7fcfda9-0add-49aa-87d4-d60f3bda4283,"IAI Area, EU27 & EFTA","IAI Area, EU27 & EFTA",,,Aluminium Industry,"Canary Islands; CENTREL; DE; ES; Europe without NORDEL (NCPA); Europe without Switzerland and France; FR; France, including overseas territories; GB; GR; IS; IT; NL; NO; NORDEL; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; SE; SI; SK; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; WEU"
+088a91da-e0cc-11de-823b-0019e336be3a,UCTE without Germany and France,UCTE without Germany and France,45.1890735487,12.8849410214,Electricity Grid,"AD; AT; BA; BE; BG; Canary Islands; CENTREL; CH; CS; CZ; DK; ES; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IT; LI; LU; MC; ME; MK; NL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SI; SK; SM; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+0d168940-7d7e-11de-9ae2-0019e336be3a,Egypt,EG,26.494,29.872,Country,
+09fd4f82-7d7e-11de-9ae2-0019e336be3a,Bolivia,BO,-16.715,-64.671,Country,
+105b361e-7d7e-11de-9ae2-0019e336be3a,Antarctica,AQ,-80.446,21.304,Country,
+3c1511cf-4beb-4d40-b2a0-3929d41dad7a,"United States of America, Ohio",US-OH,,,Province or State,
+7e6d7407-6a88-50d1-8f56-eb53f1c12102,"Brazil, South-eastern and Mid-western grid",BR-South-eastern/Mid-western grid,,,Electricity Grid,BR-DF; BR-ES; BR-GO; BR-MG; BR-Mid-western grid; BR-MS; BR-MT; BR-RJ; BR-South-eastern grid; BR-SP
+f0894a96-367f-5327-bc91-e156fdb6a5c7,"China, Northeast Grid",CN-NECG,,,Electricity Grid,CN-HL; CN-JL; CN-LN
+11a7c1a4-7d7e-11de-9ae2-0019e336be3a,Puerto Rico,US-PR,18.221,-66.466,Country,
+44528d9e-bc8d-4c2f-a949-c2c956ddce9c,"United States of America, Hawaii",US-HI,,,Province or State,
+d8cc1385-8b61-4509-8db0-d9cb5fa95725,"India, Jammu and Kashmir",IN-JK,,,Province or State,
+143d4e2a-7d7e-11de-9ae2-0019e336be3a,Venezuela,VE,7.125,-66.166,Country,
+14266b60-7d7e-11de-9ae2-0019e336be3a,Uruguay,UY,-32.8,-56.012,Country,
+60764ee9-9608-433e-a86d-96e993703bc7,"United States of America, Wisconsin",US-WI,,,Province or State,MRO; US-MRO; US-RFC
+f87aa98c-d820-11de-a736-0019e336be3a,European Network of Transmission Systems Operators for Electricity,ENTSO-E,,,Electricity Grid,"AD; AT; AX; BA; BALTSO; BE; BG; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; EE; ES; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FI; FR; France, including overseas territories; GB; GG; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IE; IM; IS; IT; JE; LI; LT; LU; LV; MC; ME; MK; MT; NL; NO; NORDEL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SE; SI; SJ; SK; SM; UCTE; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+dfd92cab-e7c7-4ca8-8abc-2fb6fd064dbc,Florida Reliability Coordinating Council,US-FRCC,28.3282233447,-81.8998890766,Electricity Grid,
+f557e57c-b331-4ed4-b103-cb9a167c71b0,US Naval Base Guantanamo Bay,Guantanamo Bay,,,Miscellaneous,
+ce1503be-7060-4959-8387-bc3ea3f4c885,Union for the Co-ordination of Transmission of Electricity,UCTE,46.0922152861,10.8049501384,Electricity Grid,"AD; AT; BA; BE; BG; Canary Islands; CENTREL; CH; CS; CZ; DE; DK; ES; Europe without Austria; Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; FR; France, including overseas territories; GI; GR; HR; HU; IAI Area, EU27 & EFTA; IAI Area, Russia & RER w/o EU27 & EFTA; IT; LI; LU; MC; ME; MK; NL; PL; PT; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; RER w/o DE+NL+NO+RU; RER w/o DE+NL+RU; RO; RS; SI; SK; SM; UCTE without France; UCTE without Germany; UCTE without Germany and France; UN-EEUROPE; UN-NEUROPE; UN-SEUROPE; VA; WEU; XK"
+f6298475-5b7f-5c28-9885-2338946a6cd6,"China, Central Grid",CN-CCG,,,Electricity Grid,CN-CQ; CN-HE; CN-HN; CN-HU; CN-SC
+12d57c60-7d7e-11de-9ae2-0019e336be3a,Sierra Leone,SL,8.56,-11.792,Country,
+a150972e-6242-4692-9e48-0a7e72b5c7f0,"United States of America, Colorado",US-CO,,,Province or State,
+2267ada9-09f7-4fc9-a93f-5b1e0086107e,Coral Sea Islands,Coral Sea Islands,,,Province or State,
+a7cf4239-43f5-4256-ae84-e94595cbaac6,"China, Beijing (北京)",CN-BJ,,,Province or State,
+0e4ef37e-7d7e-11de-9ae2-0019e336be3a,Croatia,HR,45.723,16.693,Country,
+10c0fae4-7d7e-11de-9ae2-0019e336be3a,Heard Island and McDonald Islands,HM,-53.111,73.507,Country,
+11148498-7d7e-11de-9ae2-0019e336be3a,Nauru,NR,-0.522,166.93,Country,
+0cc6c45a-7d7e-11de-9ae2-0019e336be3a,Colombia,CO,3.9,-73.076,Country,
+ae9d0b20-e4e3-4cd3-9699-63eca5319c9b,Canada without Alberta and Quebec,Canada without Alberta and Quebec,,,ecoinvent Custom Area,CA-BC; CA-MB; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-SK; CA-YK; MRO; NPCC; WECC
+3ece4ff8-55ae-40b2-baea-0d2bf2034fbf,"Brazil, North-eastern grid",BR-North-eastern grid,,,Electricity Grid,BR-AL; BR-BA; BR-CE; BR-MA; BR-PB; BR-PE; BR-PI; BR-RN; BR-SE
+094ba255-b84b-5fbd-8c8a-75547f362075,"China, Southwest Grid",CN-SWG,,,Electricity Grid,
+a4d7d7fd-94ae-4f44-91ba-53cd7f79bac4,Canada without Quebec,Canada without Quebec,,,ecoinvent Custom Area,CA-AB; CA-BC; CA-MB; Canada without Alberta; Canada without Alberta and Quebec; CA-NB; CA-NF; CA-NS; CA-NT; CA-NU; CA-ON; CA-PE; CA-SK; CA-YK; MRO; NPCC; WECC
+1505b46e-7d7e-11de-9ae2-0019e336be3a,Palau,PW,7.501,134.57,Country,
+23ccc3fe-88d5-11de-99d3-0019e336be3a,Central Asia,Central Asia,45.9159879708,66.4858014842,UN Subregion,"FSU; IAI Area, Asia, without China and GCC; KG; KZ; TJ; TM; UZ"
+0d8399c2-7d7e-11de-9ae2-0019e336be3a,Gabon,GA,-0.591,11.797,Country,
+13d387f6-7d7e-11de-9ae2-0019e336be3a,United States of America,US,39.622,-98.606,Country,MRO; NPCC; US-AK; US-AL; US-AR; US-ASCC; US-AZ; US-CA; US-CO; US-CT; US-DC; US-DE; US-FL; US-GA; US-HI; US-HICC; US-IA; US-ID; US-IL; US-IN; US-KS; US-KY; US-LA; US-MA; US-MD; US-ME; US-MI; US-MN; US-MO; US-MRO; US-MS; US-MT; US-NC; US-ND; US-NE; US-NH; US-NJ; US-NM; US-NPCC; US-NV; US-NY; US-OH; US-OK; US-OR; US-PA; US-RFC; US-RI; US-SC; US-SD; US-SERC; US-TN; US-TRE; US-TX; US-UT; US-VA; US-VT; US-WA; US-WECC; US-WI; US-WV; US-WY; WECC
+9a2c77cc-6736-4058-96d0-de5f041b22fc,"United States of America, Utah",US-UT,,,Province or State,
+0a4bff9c-7d7e-11de-9ae2-0019e336be3a,Brunei,BN,4.468,114.591,Country,
+142f54c8-7d7e-11de-9ae2-0019e336be3a,Uzbekistan,UZ,41.75,63.17,Country,
+4aff9c9e-88d5-11de-99d3-0019e336be3a,South-Eastern Asia,UN-SEASIA,7.9333408562,109.936790036,UN Subregion,"BN; IAI Area, Asia, without China and GCC; ID; KH; LA; MM; MY; PH; SG; TH; TL; VN"
+13685c7e-7d7e-11de-9ae2-0019e336be3a,Uganda,UG,1.28,32.386,Country,
+653869da-6e3f-476e-9380-19d23040f2b9,"India, Daman and Diu",IN-DD,,,Province or State,
+9a205fd8-72f3-423f-b3a7-6b805aaee30b,"Brazil, Pará",BR-PA,,,Province or State,
+13335286-7d7e-11de-9ae2-0019e336be3a,Tonga,TO,-21.202,-175.185,Country,
+0fbd80a4-7d7e-11de-9ae2-0019e336be3a,Malaysia,MY,4.201,102.195,Country,
+4a271c88-5c3c-42de-9bee-1e950cc9d9f5,"Australia, Ashmore and Cartier Islands",AU-AC,,,Province or State,
+28388907-7605-469a-b28d-cdc8f963b28b,"India, Arunachal Pradesh",IN-AR,,,Province or State,
+10033c48-7d7e-11de-9ae2-0019e336be3a,Andorra,AD,42.549,1.576,Country,
+0f8a5012-7d7e-11de-9ae2-0019e336be3a,Mauritius,MU,-20.255,57.583,Country,
+dc5987d0-7a19-4843-82f1-15708e106edb,"China, Jiangsu (江苏)",CN-JS,,,Province or State,
+8bc809e8-f246-46f7-bf1f-93e34e06befd,"China, Chongqing (重庆)",CN-CQ,,,Province or State,
+232efb31-1dd5-4d00-87a8-5fa631021c17,"China, Shaanxi (陕西)",CN-SA,,,Province or State,
+0f671a66-7d7e-11de-9ae2-0019e336be3a,Martinique,MQ,14.653,-61.021,Country,
+d4c8443a-d821-11de-b50d-0019e336be3a,Baltic System Operator,BALTSO,56.8154961753,24.7255465575,Electricity Grid,EE; LT; LV
+5b64ff1c-3c47-4adf-b89c-9e18078b9bf7,"China, China Southern Power Grid",CN-CSG,,,Electricity Grid,CN-GD; CN-GX; CN-GZ; CN-HA; CN-YN
+11430eee-7d7e-11de-9ae2-0019e336be3a,Pakistan,PK,29.967,69.386,Country,
+5fb3ee97-3981-4918-b09a-4de1b1fdb517,"Canada, Northwest Territories",CA-NT,,,Province or State,
+10bb74b6-7d7e-11de-9ae2-0019e336be3a,French Southern and Antarctic Lands,TF,-49.302,69.117,Country,
+6d7964cb-db0a-4b40-b975-b5d4d6bdb331,Somaliland,Somaliland,,,Miscellaneous,
+058885d6-d0a9-48ff-8d95-4baacf75ce97,"IAI Area, Gulf Cooperation Council","IAI Area, Gulf Cooperation Council",,,Aluminium Industry,AE; BH; OM; QA; RME
+13fd916a-e62c-11de-ba56-0019e336be3a,Melanesia,UN-MELANESIA,-7.79665942325,147.878212248,UN Subregion,FJ; NC; PG; SB; VU
+0f16e870-7d7e-11de-9ae2-0019e336be3a,Kuwait,KW,29.476,47.376,Country,
+0d6d36be-7d7e-11de-9ae2-0019e336be3a,French Polynesia,PF,-17.626,-149.462,Country,
+2f82cf2a-d2e0-4be3-b60c-399bfe93d403,"China, Anhui (安徽)",CN-AH,,,Province or State,
+0d2ed0a4-7d7e-11de-9ae2-0019e336be3a,Eritrea,ER,16.045,38.219,Country,
+0f8e6c2e-7d7e-11de-9ae2-0019e336be3a,Mauritania,MR,20.26,-10.332,Country,
+19c7cdd2-e590-11de-9dfe-0019e336be3a,Asia,RAS,45.2011798524,96.0759241232,ecoinvent Region,"AE; AF; Akrotiri; AM; Asia without China; AZ; BD; BH; BN; BT; Central Asia; China w/o Inner Mongol; CN; CN-AH; CN-BJ; CN-CCG; CN-CQ; CN-CSG; CN-ECGC; CN-FJ; CN-GD; CN-GS; CN-GX; CN-GZ; CN-HA; CN-HB; CN-HE; CN-HL; CN-HN; CN-HU; CN-JL; CN-JS; CN-JX; CN-LN; CN-NCGC; CN-NECG; CN-NM; CN-NWG; CN-NX; CN-QH; CN-SA; CN-SC; CN-SD; CN-SGCC; CN-SH; CN-SWG; CN-SX; CN-TJ; CN-XJ; CN-XZ; CN-YN; CN-ZJ; CY; Cyprus No Mans Area; Dhekelia Base; FSU; GE; HK; IAI Area, Asia, without China and GCC; IAI Area, Gulf Cooperation Council; IAI Area, Russia & RER w/o EU27 & EFTA; ID; IL; IN; IN-AN; IN-AP; IN-AR; IN-AS; IN-BR; IN-CH; IN-CT; IN-DD; IN-DL; IN-DN; IN-Eastern grid; IN-GA; IN-GJ; IN-HP; IN-HR; IN-Islands; IN-JH; IN-JK; IN-KA; IN-KL; IN-LD; IN-MH; IN-ML; IN-MN; IN-MP; IN-MZ; IN-NL; IN-North-eastern grid; IN-Northern grid; IN-OR; IN-PB; IN-PY; IN-RJ; IN-SK; IN-Southern grid; IN-TN; IN-TR; IN-UP; IN-UT; IN-WB; IN-Western grid; IQ; IR; JO; JP; KG; KH; KP; KR; KW; KZ; LA; LB; LK; MM; MN; MO; MV; MY; Northern Cyprus; NP; OM; PH; PK; PS; QA; RME; RU; Russia (Asia); SA; SAS; SG; Siachen Glacier; SY; TH; TJ; TL; TM; TR; TW; UN-ASIA; UN-EASIA; UN-EEUROPE; UN-EUROPE; UN-SEASIA; UN-WASIA; UZ; VN; YE"
+12143bfe-7d7e-11de-9ae2-0019e336be3a,Russia,RU,61.8473803207,97.0373776875,Country,Asia without China; Europe without Austria; Europe without NORDEL (NCPA); Europe without Switzerland; Europe without Switzerland and Austria; Europe without Switzerland and France; RAS; RER; RER w/o AT+BE+CH+DE+FR+IT; RER w/o CH+DE; RER w/o DE+NL+NO; Russia (Asia); Russia (Europe)
+14599396-7d7e-11de-9ae2-0019e336be3a,United States Virgin Islands,VI,17.9678894622,-64.7869270922,Country,
+224fd156-b734-4ac7-b7b8-a6ad56e8ccec,"United States of America, Mississippi",US-MS,,,Province or State,
+4324911f-22e8-4e7f-ae3a-c7f95ecd13a2,"United States of America, Oregon",US-OR,,,Province or State,
+2ee2dbc5-0095-44a4-bb20-5faa60c17efe,"United States of America, Louisiana",US-LA,,,Province or State,MRO; US-MRO; US-SERC
+0d684cbc-7d7e-11de-9ae2-0019e336be3a,"Micronesia, Federated States of",FM,6.883,158.235,Country,
+6bf93cce-7c23-463e-9962-898efa030fa2,"Canada, Alberta",CA-AB,,,Province or State,
+15265aa2-7d7e-11de-9ae2-0019e336be3a,Vatican,VA,41.9041775266,12.4511346138,Country,
+3af9101d-692a-4f6c-87c5-e43f00714165,"United States of America, Arkansas",US-AR,,,Province or State,MRO; US-MRO; US-SERC
+0d45a5d6-7d7e-11de-9ae2-0019e336be3a,Czechia,CZ,49.743,15.338,Country,
+fa7f6c22-bd54-58c5-a8f0-0939ace8b856,"China, Northwest Grid",CN-NWG,,,Electricity Grid,CN-GS; CN-NX; CN-QH; CN-SA; CN-XJ
+0cd759a0-7d7e-11de-9ae2-0019e336be3a,Central African Republic,CF,6.571,20.483,Country,
+0fe1621c-7d7e-11de-9ae2-0019e336be3a,Niue,NU,-19.052,-169.869,Country,
+2248c6cf-f68d-4dac-85bb-fac7e80064f6,"Brazil, Rio Grande do Sul",BR-RS,,,Province or State,
+11311298-7d7e-11de-9ae2-0019e336be3a,Paraguay,PY,-23.236,-58.391,Country,
+17a40e27-7f28-48c3-892d-6121e748ed01,"Brazil, Sergipe",BR-SE,,,Province or State,
+d09a0e3b-bd6e-49f4-9bfb-9a3acbf9dc78,"European Union - 27 Member", EU27,,,Region
+e376cbfc-fa8e-4e63-a8a3-fac2f005d789,"OECD", OECD,,,Region
+8f7b17c2-2402-47d8-8651-974e2453c55b,"non-OECD", non-OECD,,,Region
+7a88624d-7b84-4a4d-bb2d-7b674e3a0418,"New Hebrides (Vanuatu)", NHVU,,,Country
+e3a2c2c3-45f8-4bcb-96ac-4e23288c37e2,"Baker Island",UM-81,,,Territory,
+f77b9e13-df32-42b2-8375-05f6b90c75ee,"Howland Island",UM-84,,,Territory,
+11c8e506-125e-438a-9e0a-32562c9f63e2,"Jarvis Island",UM-86,,,Territory,
+27e48e2d-b58c-4b3f-814b-7bfcd02c7b69,"Johnston Atoll",UM-67,,,Territory,
+20f158c4-5b3f-4df9-af14-30c308439c79,"Kingman Reef",UM-89,,,Territory,
+c0f20c63-55ad-4534-8de7-efaf9e5d46b7,"Midway Islands",UM-71,,,Territory,
+91ef20a5-d6f7-4c06-bb81-dce5eb4da0d4,"Navassa Island",UM-76,,,Territory,
+5b7507df-9143-48c8-a64b-28505b2f428d,"Palmyra Atoll",UM-95,,,Territory,
+c6d6f39b-5867-4f2b-9d4a-9d6257291760,"Wake Island",UM-79,,,Territory,
+e5402183-7b22-4d9c-9885-80f5eb0ee187,"OECD Asia",OECD-AS,,,Region,
+c6100e7a-7ef5-4201-98f0-5a79786d6d28,"OECD Oceania",OECD-OC,,,Region,
+3f5e1e79-69bb-41ff-b871-6a40c2fb2b95,"OECD Europe",OECD-EU,,,Region,
+550292b7-0cd1-4d69-b86c-23c4f8325e1a,"OECD North America",OECD-NA,,,Region,
+187fc989-9e35-4bdf-a539-5906a2fb1d1d,"Serbia and Montenegro (Former)", CS,,,Country,
+a9c1edc2-f172-4b36-bd7f-6b04f859ef27,"OPEC Middle East",OPEC-ME,,,Region,
+0fd5f438-f12a-4f14-ae22-06e072ac0c81,"OPEC Africa",OPEC-AF,,,Region,
+476fdbcb-dae7-4e2b-b868-ded28f9b631e,"OPEC South America",OPEC-SA,,,Region,
+b8b84b05-9b67-4e6a-8d7c-3fcb3e77a6d5, "non OPEC", non-OPEC,,,Region,

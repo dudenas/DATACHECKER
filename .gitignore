@@ -3,3 +3,5 @@
 *.zip
 IPCC_test.ipynb
 *.csv
+!/docs/
+!/docs/*.csv

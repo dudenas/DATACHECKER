@@ -36,8 +36,10 @@ sh datachecker_run.sh -f filepath -zip -r
 | Repetition_1            | FIX   |
 | Repetition_2            | FIX   |
 | Repetition_4            | FIX   |
-| Formatting-1            | PASS  |
 | Formatting_2            | PASS  |
 | Formatting_3            | PASS  |
 | Formatting_4            | PASS  |
 | Formatting_5            | PASS  |
+| Formatting_6            | PASS  |
+| Formatting_7            | PASS  |
+| Formatting_8            | PASS  |

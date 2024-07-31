@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
+# In[205]:
 
 
 import shutil
@@ -30,25 +30,53 @@ warnings.filterwarnings("ignore", 'This pattern is interpreted as a regular expr
 
 # Add complete filepath here.
 filepath = sys.argv[1] if len(sys.argv) > 1 else ''
-# filepath = "/Users/kazkas/Downloads/IPCCEDGAR_EF_MVP02_20240604.csv"
+# uncomment for local testing the following
+# filepath = "./ProductionTradeSupplyFuelOil_MVP02_EF_20240712.csv"
 zip = sys.argv[2].lower() == 'true' if len(sys.argv) > 2 else False
 
 filename = Path(filepath).stem
 folder_to_download = filename  # Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
 
 
-# In[14]:
+# In[206]:
+
+
+# open docs/Geographies.csv and put values into a dataframe
+df_geography = pd.read_csv('./docs/Geographies.csv', delimiter=',', header=0)
+df_geography = df_geography['Shortname']
+
+# open docs/Units.csv and put values into a dataframe
+df_units = pd.read_csv('./docs/Units.csv', delimiter=',', header=0)
+df_units = df_units['Abbreviation']
+
+
+# In[207]:
 
 
 # Open the JSON file and load columns into variables
-with open("columns.json", 'r') as json_file:
+with open("docs/columns.json", 'r') as json_file:
     # Load the JSON data into a Python object
     data = json.load(json_file)
     universal_tabular_columns = data["universal_tabular_columns"]
     non_discerning_columns = data["non_discerning_columns"]
+    df_mandatory_ef_columns = data["mandatory_columns_ef"] # Emission Factors
+    df_mandatory_c_columns = data["mandatory_columns_cl"] # Compositions
 
 
-# In[19]:
+# In[208]:
+
+
+def format_number_with_commas(number):
+    try:
+        # Ensure the number is an integer
+        number = int(number)
+        # Format the number with commas
+        return f"{number:,}"
+    except ValueError:
+        return "Invalid number"
+
+
+# In[209]:
 
 
 # change if there is an error reading csv or it is strangely formatted
@@ -132,7 +160,7 @@ MASTER_TABLE += "-\n"
 # print(len(df.columns))
 
 
-# In[ ]:
+# In[210]:
 
 
 # check whether existing columns are in the same names as universal tabular columns
@@ -148,7 +176,7 @@ for index, item in enumerate(universal_tabular_columns):
         df[item] = pd.Series(dtype='object')
 
 
-# In[7]:
+# In[211]:
 
 
 def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
@@ -222,7 +250,7 @@ table_text = ['Number of instances', 'Number of records that indiscernable', '% 
 duplicates_non_discerning(df, non_discerning_columns, table_text, "Non_discerning_info")
 
 
-# In[8]:
+# In[212]:
 
 
 def missing_value(dataFrame):
@@ -242,9 +270,6 @@ def missing_value(dataFrame):
             mvv_changed.append(val)
                 
         return mvv_changed
-
-    df_mandatory_ef_columns = ["Name", "Value", "Unit"] # Emission Factors
-    df_mandatory_c_columns = ["Name", "Components"] # Compositions
 
     # check whether it is emmission factor or composition
     if dataFrame["Value"].isna().sum() == df_count:
@@ -306,7 +331,7 @@ def missing_value(dataFrame):
 missing_value(df)
 
 
-# In[9]:
+# In[213]:
 
 
 def repetition(dataFrame, df_columns, table_text, analyse_name):
@@ -408,75 +433,7 @@ except:
     pass
 
 
-# In[10]:
-
-
-def format_1(dataFrame, df_columns, analyse_name):
-    global MASTER_TABLE
-    
-    def check_spelling(item):
-        try:
-            row = item[df_columns[0]]
-            row_split = row.split()
-            for i in row_split:
-                if not i[0].isupper():
-                    if not i == "of" and not i == "and" and not i =="the":
-                        return True
-            return False
-        except:
-            print(f"Exception, inspect it : {item}")
-            return True
-
-    df_local = dataFrame[df_columns]
-
-    df_results = df_local[df_local.apply(check_spelling, axis=1)]
-
-    # check upper case
-    count = df_results.shape[0]
-    indexes = df_results.index
-
-    # count percent
-    df_percent = count / df_local.shape[0]
-
-    # print table
-    MASTER_TABLE += f"{analyse_name}\n"
-    
-    # if there are no values exit
-    if df_percent == 0:
-        MASTER_TABLE += "% of rows where the Region/Regional Scope column items is without capitalization\n"
-        MASTER_TABLE += "PASS\n"
-        MASTER_TABLE += "-\n"
-        MASTER_TABLE += "-\n"
-        MASTER_TABLE += "-\n"
-
-        add_to_cmd_table(analyse_name, "PASS")
-        return
-    
-    add_to_cmd_table(analyse_name, "FIX", True)
-    
-    table = [["% of rows where the Region/Regional Scope column items is without capitalization"],[df_percent]]
-    print_table(table, True)
-
-    # save document
-    df_full_table = dataFrame.loc[indexes]
-    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
-
-
-if (df[["Region/Regional Scope"]].isnull().sum() == df.shape[0]).all() == False:            
-    format_1(df, ["Region/Regional Scope"], "Formatting-1")
-else:
-    print("No Region/Regional Scope")
-    # print table
-    MASTER_TABLE += "Formatting_1\n"
-    MASTER_TABLE += "% of rows where the Region/Regional Scope column items is without capitalization\n"
-    MASTER_TABLE += "No Region/Regional Scope \n"
-    MASTER_TABLE += "-\n"
-    MASTER_TABLE += "-\n"
-    MASTER_TABLE += "-\n"
-    
-
-
-# In[11]:
+# In[214]:
 
 
 def format_2(dataFrame, df_columns, analyse_name):
@@ -505,7 +462,7 @@ def format_2(dataFrame, df_columns, analyse_name):
     
     # if there are no values exit
     if df_percent == 0:
-        MASTER_TABLE += "% of rows where the Value column does items not contain a number\n"
+        MASTER_TABLE += "of rows where the Value column items does not contain a number\n"
         MASTER_TABLE += "PASS\n"
         MASTER_TABLE += "-\n"
         MASTER_TABLE += "-\n"
@@ -516,7 +473,8 @@ def format_2(dataFrame, df_columns, analyse_name):
     
     add_to_cmd_table(analyse_name, "FIX", True)
 
-    table = [["% of rows where the Value column does items not contain a number"],[df_percent]]
+    table = [["of rows where the Value column items does not contain a number"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+
     print_table(table, True)
 
 
@@ -527,7 +485,7 @@ def format_2(dataFrame, df_columns, analyse_name):
 format_2(df, ["Value"], "Formatting_2")
 
 
-# In[12]:
+# In[215]:
 
 
 def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_text):
@@ -599,7 +557,212 @@ description_text = "% of rows with a question mark in any column & count"
 format_all_columns(df, df.columns, regex, "Formatting_5",description_text)
 
 
+# In[216]:
+
+
+def format_6(dataFrame, df_columns, analyse_name):
+    global MASTER_TABLE
+    
+    # check whether df_local contains a value from df_geographies 
+    def check_geography(item):
+        try:
+            row = item[df_columns[0]]
+            if row not in df_geography.values:
+                return True
+            return False
+        except:
+            print(f"Exception, inspect it : {item}")
+            return True
+
+    # take only the columns that are needed
+    df_local = dataFrame[df_columns]
+
+    df_results = df_local[df_local.apply(check_geography, axis=1)]
+
+    # check upper case
+    count = df_results.shape[0]
+    indexes = df_results.index
+
+    # count percent
+    df_percent = count / df_local.shape[0]
+
+    # print table
+    MASTER_TABLE += f"{analyse_name}\n"
+    
+    # if there are no values exit
+    if count == 0:
+        MASTER_TABLE += "of rows not in geograpies list\n"
+        MASTER_TABLE += "PASS\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+
+        add_to_cmd_table(analyse_name, "PASS")
+        return
+    
+    add_to_cmd_table(analyse_name, "FIX", True)
+    
+    table = [["of rows not in geograpies list"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    print_table(table, True)
+
+    # save document
+    df_full_table = dataFrame.loc[indexes]
+    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+
+
+if (df[["Region/Regional Scope"]].isnull().sum() == df.shape[0]).all() == False:            
+    format_6(df, ["Region/Regional Scope"], "Formatting_6")
+else:
+    print("No Region/Regional Scope")
+    # print table
+    MASTER_TABLE += "Formatting_6\n"
+    MASTER_TABLE += "of rows not in geograpies list\n"
+    MASTER_TABLE += "No Region/Regional Scope \n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+
+
+# In[217]:
+
+
+def format_7(dataFrame, df_columns, analyse_name):
+    global MASTER_TABLE
+    
+    # check whether df_local contains a value from df_geographies 
+    def check_date(item):
+        try:
+            row = str(item[df_columns[0]])  # Convert the value to a string
+            # Define regex patterns for yyyy-dd-mm and yyyy
+            pattern_yyyy_dd_mm = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+            pattern_yyyy = re.compile(r'^\d{4}$')
+            
+            # Check if the row matches either pattern
+            if not (pattern_yyyy_dd_mm.match(row) or pattern_yyyy.match(row)):
+                return True
+            return False
+        except Exception as e:
+            print(f"Exception, inspect it : {item}, Error: {e}")
+            return True
+
+    # take only the columns that are needed
+    df_local = dataFrame[df_columns]
+
+    df_results = df_local[df_local.apply(check_date, axis=1)]
+
+    # check upper case
+    count = df_results.shape[0]
+    indexes = df_results.index
+
+    # count percent
+    df_percent = count / df_local.shape[0]
+
+    # print table
+    MASTER_TABLE += f"{analyse_name}\n"
+    
+    # if there are no values exit
+    if count == 0:
+        MASTER_TABLE += "of rows not in correct date format\n"
+        MASTER_TABLE += "PASS\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+
+        add_to_cmd_table(analyse_name, "PASS")
+        return
+    
+    add_to_cmd_table(analyse_name, "FIX", True)
+    
+    table = [["of rows not in correct date format"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    print_table(table, True)
+
+    # save document
+    df_full_table = dataFrame.loc[indexes]
+    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+
+
+if (df[["Sample/Representative Date"]].isnull().sum() == df.shape[0]).all() == False:            
+    format_7(df, ["Sample/Representative Date"], "Formatting_7")
+else:
+    print("No Sample/Representative Date")
+    # print table
+    MASTER_TABLE += "Formatting_7\n"
+    MASTER_TABLE += "of rows not in correct date format\n"
+    MASTER_TABLE += "No Sample/Representative Date \n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+    
+
+
 # In[ ]:
+
+
+def format_8(dataFrame, df_columns, analyse_name):
+    global MASTER_TABLE
+    
+    # check whether df_local contains a value from df_units 
+    def check_unit(item):
+        try:
+            row = item[df_columns[0]]
+            if row not in df_units.values:
+                return True
+            return False
+        except:
+            print(f"Exception, inspect it : {item}")
+            return True
+
+    # take only the columns that are needed
+    df_local = dataFrame[df_columns]
+
+    df_results = df_local[df_local.apply(check_unit, axis=1)]
+
+    # check upper case
+    count = df_results.shape[0]
+    indexes = df_results.index
+
+    # count percent
+    df_percent = count / df_local.shape[0]
+
+    # print table
+    MASTER_TABLE += f"{analyse_name}\n"
+    
+    # if there are no values exit
+    if count == 0:
+        MASTER_TABLE += "of rows not in correct unit format\n"
+        MASTER_TABLE += "PASS\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+        MASTER_TABLE += "-\n"
+
+        add_to_cmd_table(analyse_name, "PASS")
+        return
+    
+    add_to_cmd_table(analyse_name, "FIX", True)
+    
+    table = [["of rows not in correct unit format"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    print_table(table, True)
+
+    # save document
+    df_full_table = dataFrame.loc[indexes]
+    df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
+
+
+if (df[["Unit"]].isnull().sum() == df.shape[0]).all() == False:            
+    format_8(df, ["Unit"], "Formatting_8")
+else:
+    print("No Units")
+    # print table
+    MASTER_TABLE += "Formatting_8\n"
+    MASTER_TABLE += "of rows not in correct unit format\n"
+    MASTER_TABLE += "No Units \n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+    MASTER_TABLE += "-\n"
+    
+
+
+# In[219]:
 
 
 def save_table ():
@@ -610,7 +773,7 @@ def save_table ():
 save_table()
 
 
-# In[ ]:
+# In[220]:
 
 
 def split_files(directory):
@@ -640,7 +803,7 @@ def split_files(directory):
 split_files(FOLDER_PATH)
 
 
-# In[ ]:
+# In[221]:
 
 
 # Only make an archive if zip is True

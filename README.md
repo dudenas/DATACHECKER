@@ -9,7 +9,7 @@ pip install -r requirements.txt
 To convert a jupyter notebook to running python code, run a command
 
 ```shell
-jupyter nbconvert --to python dataset_analysis_concat-240604.ipynb --output datachecker.py
+jupyter nbconvert --to python datachecker.ipynb --output datachecker.py
 ```
 
 ### run datachecker in teminal
@@ -19,7 +19,7 @@ Command | Comment
 --- | ---
 **-f** | filepath: The path to the file to be checked.
 **-zip** | Optional argument. Pass to enable zip.
-**-r** | Optional argument. Pass to prevent removal of the directory.
+**-r** | Optional argument. Pass to have a report folder.
 
 
 ```shell

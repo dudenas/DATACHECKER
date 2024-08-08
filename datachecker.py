@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[205]:
+# In[33]:
 
 
 import shutil
@@ -23,6 +23,18 @@ from pathlib import Path
 
 import json
 
+import csv
+from io import StringIO
+from reportlab.lib.pagesizes import letter
+from reportlab.platypus import SimpleDocTemplate, Image, Paragraph
+from reportlab.lib import colors
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.pdfgen import canvas
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, PageBreak, Spacer, Image, Frame, PageTemplate
+from reportlab.graphics.shapes import Drawing, Line
+import os
+import glob
+
 # ignore group warnings
 import warnings
 warnings.filterwarnings("ignore", 'This pattern has match groups')
@@ -38,7 +50,7 @@ filename = Path(filepath).stem
 folder_to_download = filename  # Use the same name as the CSV file you are feeding in. At the very bottom of the page, once the report is generated, a Zip file becomes available to download.
 
 
-# In[206]:
+# In[34]:
 
 
 # open docs/Geographies.csv and put values into a dataframe
@@ -50,7 +62,7 @@ df_units = pd.read_csv('./docs/Units.csv', delimiter=',', header=0)
 df_units = df_units['Abbreviation']
 
 
-# In[207]:
+# In[35]:
 
 
 # Open the JSON file and load columns into variables
@@ -62,8 +74,14 @@ with open("docs/columns.json", 'r') as json_file:
     df_mandatory_ef_columns = data["mandatory_columns_ef"] # Emission Factors
     df_mandatory_c_columns = data["mandatory_columns_cl"] # Compositions
 
+# Open the JSON file and load graph repetition comparison into variables
+with open("docs/graph_repetition_comparison.json", 'r') as json_file:
+    # Load the JSON data into a Python object
+    data = json.load(json_file)
+    graph_repetition = data
 
-# In[208]:
+
+# In[36]:
 
 
 def format_number_with_commas(number):
@@ -76,7 +94,70 @@ def format_number_with_commas(number):
         return "Invalid number"
 
 
-# In[209]:
+# In[37]:
+
+
+def draw_graph(range_vals, percent_vals, graph_name, save_path):
+    # draw line graph where range_vals would be x values and percent_vals would be y values
+    import matplotlib.pyplot as plt
+    from itertools import zip_longest as zip
+
+    # Set the figure size and background color
+    plt.figure(figsize=(12, 8), facecolor='#131415')
+
+    # print for getting comparison values
+    # print(graph_name, range_vals, percent_vals)
+
+    # Draw line graph where range_vals would be x values and percent_vals would be y values
+    plt.plot(range(len(range_vals)), percent_vals, marker='s', color='#FFC80F',  zorder=5, linewidth=1, markersize=5)
+
+    # Draw the second line graph if provided
+    comparison_line = graph_repetition[graph_name]
+    second_range_vals = comparison_line[0]
+    second_percent_vals = comparison_line[1]
+    plt.plot(range(len(second_range_vals)), second_percent_vals, marker='s', color='#4C4C4D', zorder=4,linewidth=1, linestyle='dashed', markersize=10)
+
+    # Set the x-ticks to be evenly spaced indices
+    plt.xticks(range(len(range_vals)), [f"{val} \n ({percent*100:.1f}%)" for val, percent in zip(range_vals, percent_vals)], color='#E9E9E9')
+
+    # Set the y-ticks with custom color
+    plt.yticks(color='#E9E9E9')
+
+    # Label the axes
+    plt.xlabel('Range Values',  color=(1., 1., 1., .65))
+    plt.ylabel('Percent',  color=(1., 1., 1., .65))
+
+    # Title of the plot
+    plt.title(graph_name, color=(1., 1., 1., .65))
+
+    # Set the grid color to white
+    plt.grid(True,  color='#2F3031')
+
+    # Set the background color of the plot area to black
+    plt.gca().set_facecolor('#131415')
+
+    # Remove the border around the graph
+    ax = plt.gca()
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+
+    # Set the y-axis limits to always be from 0 to 1
+    plt.ylim(-0.05, 1.05)
+
+    # Set tick parameters to ensure visibility
+    # plt.tick_params(axis='x', color='#2F3031')
+    # plt.tick_params(axis='y', color='#2F3031')
+
+    # Save the plot to the specified path
+    plt.savefig(save_path, facecolor='#131415')
+
+    # Show the plot
+    # plt.show()
+
+
+# In[38]:
 
 
 # change if there is an error reading csv or it is strangely formatted
@@ -160,7 +241,7 @@ MASTER_TABLE += "-\n"
 # print(len(df.columns))
 
 
-# In[210]:
+# In[39]:
 
 
 # check whether existing columns are in the same names as universal tabular columns
@@ -176,7 +257,33 @@ for index, item in enumerate(universal_tabular_columns):
         df[item] = pd.Series(dtype='object')
 
 
-# In[211]:
+# In[40]:
+
+
+# make the data incorrect
+
+df.loc[7,'Source'] = None
+df.loc[7,'Value'] = "12"
+df.loc[7,'Name'] = "$$ test"
+df.loc[7,'Description'] = "test  this"
+df.loc[8,'Name'] = "test this?"
+# row 2 should be equal to row 1
+
+# duplication
+for index, item in enumerate(df.columns):
+    df.loc[4,item] = df.loc[3,item]
+
+# non discenrning
+for index, item in enumerate(df.columns):
+    if item in non_discerning_columns:
+        df.loc[5,item] = df.loc[4,item]
+
+
+df.loc[2, 'Name'] = np.nan
+df.loc[2, 'Description'] = np.nan
+
+
+# In[41]:
 
 
 def duplicates_non_discerning(dataFrame, df_columns, table_text, analyse_name):
@@ -250,7 +357,7 @@ table_text = ['Number of instances', 'Number of records that indiscernable', '% 
 duplicates_non_discerning(df, non_discerning_columns, table_text, "Non_discerning_info")
 
 
-# In[212]:
+# In[42]:
 
 
 def missing_value(dataFrame):
@@ -331,7 +438,7 @@ def missing_value(dataFrame):
 missing_value(df)
 
 
-# In[213]:
+# In[ ]:
 
 
 def repetition(dataFrame, df_columns, table_text, analyse_name):
@@ -386,6 +493,7 @@ def repetition(dataFrame, df_columns, table_text, analyse_name):
     table = [df_range_vals,df_total,df_instances,df_percent]
     print_table(table, False, ["more or equal to copies ", "data affected", "instance count", "percent"])
 
+    draw_graph(df_range_vals, df_percent, f'{analyse_name} | {table_text}', f'{FOLDER_PATH}/REPETITION/Report-{analyse_name}-Output_2-{filename}-{CURRENT_DATE}.png')   
 
     # SAVE FILES
     # save - Rows that are duplicated - OUTPUT 1
@@ -433,10 +541,10 @@ except:
     pass
 
 
-# In[214]:
+# In[44]:
 
 
-def format_2(dataFrame, df_columns, analyse_name):
+def format_2(dataFrame, df_columns, analyse_name, description_text):
     global MASTER_TABLE
     
     def check_numbers(item):
@@ -459,10 +567,10 @@ def format_2(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
+    MASTER_TABLE += f"{description_text}\n"
     
     # if there are no values exit
     if df_percent == 0:
-        MASTER_TABLE += "of rows where the Value column items does not contain a number\n"
         MASTER_TABLE += "PASS\n"
         MASTER_TABLE += "-\n"
         MASTER_TABLE += "-\n"
@@ -473,19 +581,20 @@ def format_2(dataFrame, df_columns, analyse_name):
     
     add_to_cmd_table(analyse_name, "FIX", True)
 
-    table = [["of rows where the Value column items does not contain a number"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    # table = [["of rows where the Value column items does not contain a number"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    # print_table(table, True)
 
-    print_table(table, True)
-
+    table = [[df_columns[0]], [df_percent], [count]]
+    print_table(table, False, ["Column", "Percentage", "Count"])
 
     # save document
     df_full_table = dataFrame.loc[indexes]
     df_full_table.to_csv(f'{FOLDER_PATH}/FORMATTING/Report-{analyse_name}-Output_1-{filename}-{CURRENT_DATE}.csv',encoding='utf-8')
             
-format_2(df, ["Value"], "Formatting_2")
+format_2(df, ["Value"], "Formatting_2", "of rows where the Value column items does not contain a number")
 
 
-# In[215]:
+# In[45]:
 
 
 def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_text):
@@ -536,12 +645,23 @@ def format_all_columns(dataFrame, df_columns, regex, analyse_name, description_t
         add_to_cmd_table(analyse_name, "PASS")
         return
     
-    if analyse_name == "Formatting_5":
-        add_to_cmd_table(analyse_name, "FIX", True)
-    else:
-        add_to_cmd_table(analyse_name, "FIX")
+    add_to_cmd_table(analyse_name, "FIX", True)
+
+    # Convert output_count from strings to integers
+    # output_count = [int(count) for count in output_count]
+
+    # Get indexes where output_count is 1
+    indexes_with_one = [index for index, count in enumerate(output_count) if int(count) > 0]
+
+    # Filter percentages, counts, and columns by these indexes
+    filtered_percentages = [output_percentages[index] for index in indexes_with_one]
+    filtered_counts = [output_count[index] for index in indexes_with_one]
+    filtered_columns = [df_local.columns[index] for index in indexes_with_one]
+
+    table = [filtered_columns, filtered_percentages, filtered_counts]
+    # print(table)
     
-    table = [df_local.columns.tolist(), output_percentages, output_count]
+    # table = [df_local.columns.tolist(), output_percentages, output_count]
     print_table(table, False, ["Column", "Percentage", "Count"])
 
 regex = r"([^A-Za-z0-9 ])\1"
@@ -557,10 +677,10 @@ description_text = "% of rows with a question mark in any column & count"
 format_all_columns(df, df.columns, regex, "Formatting_5",description_text)
 
 
-# In[216]:
+# In[46]:
 
 
-def format_6(dataFrame, df_columns, analyse_name):
+def format_6(dataFrame, df_columns, analyse_name, description_text):
     global MASTER_TABLE
     
     # check whether df_local contains a value from df_geographies 
@@ -588,6 +708,7 @@ def format_6(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
+    MASTER_TABLE += f"{description_text}\n"
     
     # if there are no values exit
     if count == 0:
@@ -602,8 +723,11 @@ def format_6(dataFrame, df_columns, analyse_name):
     
     add_to_cmd_table(analyse_name, "FIX", True)
     
-    table = [["of rows not in geograpies list"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
-    print_table(table, True)
+    # table = [["of rows not in geograpies list"],[f"{format_number_with_commas(count)} / {format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    # print_table(table, True)
+
+    table = [[df_columns[0]], [df_percent], [count]]
+    print_table(table, False, ["Column", "Percentage", "Count"])
 
     # save document
     df_full_table = dataFrame.loc[indexes]
@@ -611,7 +735,7 @@ def format_6(dataFrame, df_columns, analyse_name):
 
 
 if (df[["Region/Regional Scope"]].isnull().sum() == df.shape[0]).all() == False:            
-    format_6(df, ["Region/Regional Scope"], "Formatting_6")
+    format_6(df, ["Region/Regional Scope"], "Formatting_6", "of rows not in geograpies list")
 else:
     print("No Region/Regional Scope")
     # print table
@@ -623,10 +747,10 @@ else:
     MASTER_TABLE += "-\n"
 
 
-# In[217]:
+# In[47]:
 
 
-def format_7(dataFrame, df_columns, analyse_name):
+def format_7(dataFrame, df_columns, analyse_name, description_text):
     global MASTER_TABLE
     
     # check whether df_local contains a value from df_geographies 
@@ -659,6 +783,7 @@ def format_7(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
+    MASTER_TABLE += f"{description_text}\n"
     
     # if there are no values exit
     if count == 0:
@@ -673,8 +798,11 @@ def format_7(dataFrame, df_columns, analyse_name):
     
     add_to_cmd_table(analyse_name, "FIX", True)
     
-    table = [["of rows not in correct date format"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
-    print_table(table, True)
+    # table = [["of rows not in correct date format"],[f"{format_number_with_commas(count)} / {format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    # print_table(table, True)
+    
+    table = [[df_columns[0]], [df_percent], [count]]
+    print_table(table, False, ["Column", "Percentage", "Count"])
 
     # save document
     df_full_table = dataFrame.loc[indexes]
@@ -682,7 +810,7 @@ def format_7(dataFrame, df_columns, analyse_name):
 
 
 if (df[["Sample/Representative Date"]].isnull().sum() == df.shape[0]).all() == False:            
-    format_7(df, ["Sample/Representative Date"], "Formatting_7")
+    format_7(df, ["Sample/Representative Date"], "Formatting_7", "of rows not in correct date format")
 else:
     print("No Sample/Representative Date")
     # print table
@@ -695,10 +823,10 @@ else:
     
 
 
-# In[ ]:
+# In[48]:
 
 
-def format_8(dataFrame, df_columns, analyse_name):
+def format_8(dataFrame, df_columns, analyse_name, description_text):
     global MASTER_TABLE
     
     # check whether df_local contains a value from df_units 
@@ -726,6 +854,7 @@ def format_8(dataFrame, df_columns, analyse_name):
 
     # print table
     MASTER_TABLE += f"{analyse_name}\n"
+    MASTER_TABLE += f"{description_text}\n"
     
     # if there are no values exit
     if count == 0:
@@ -740,8 +869,11 @@ def format_8(dataFrame, df_columns, analyse_name):
     
     add_to_cmd_table(analyse_name, "FIX", True)
     
-    table = [["of rows not in correct unit format"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
-    print_table(table, True)
+    # table = [["of rows not in correct unit format"],[f"{format_number_with_commas(count)}/{format_number_with_commas(df_local.shape[0])} | {df_percent}"]]
+    # print_table(table, True)
+
+    table = [[df_columns[0]], [df_percent], [count]]
+    print_table(table, False, ["Column", "Percentage", "Count"])
 
     # save document
     df_full_table = dataFrame.loc[indexes]
@@ -749,7 +881,7 @@ def format_8(dataFrame, df_columns, analyse_name):
 
 
 if (df[["Unit"]].isnull().sum() == df.shape[0]).all() == False:            
-    format_8(df, ["Unit"], "Formatting_8")
+    format_8(df, ["Unit"], "Formatting_8", "of rows not in correct unit format")
 else:
     print("No Units")
     # print table
@@ -762,7 +894,7 @@ else:
     
 
 
-# In[219]:
+# In[49]:
 
 
 def save_table ():
@@ -773,7 +905,267 @@ def save_table ():
 save_table()
 
 
-# In[220]:
+# In[50]:
+
+
+def save_pdf():
+    global MASTER_TABLE
+    fname = f'{FOLDER_PATH}/Report-{filename}-{CURRENT_DATE}.pdf'
+    
+    # Parse the CSV data in MASTER_TABLE
+    csv_data = StringIO(MASTER_TABLE)
+    reader = csv.reader(csv_data)
+    all_rows = [row for row in reader]  # Read all rows into a list
+    
+    # Split data into separate tables based on the separator
+    tables = []
+    current_table = []
+    for row in all_rows:
+        if row == ["-"]:
+            if current_table:
+                tables.append(current_table)
+                current_table = []
+        else:
+            current_table.append(row)
+    if current_table:
+        tables.append(current_table)
+    
+    # Create a PDF document
+    pdf = SimpleDocTemplate(fname, pagesize=letter)
+    elements = []
+    styles = getSampleStyleSheet()
+    
+    # Define custom styles for headline and subheadline
+    error_style = ParagraphStyle(
+        name='Headline', 
+        parent=styles['Heading2'], 
+        fontName='Helvetica-Bold',
+        textColor= colors.HexColor("#FFC80F"),  # Set the line color to gray
+        fontSize=10, 
+        spaceBefore=16, 
+        spaceAfter=8
+    )
+
+    headline_style = ParagraphStyle(
+        name='Headline', 
+        parent=styles['Heading2'], 
+        fontName='Helvetica-Bold',
+        textColor= colors.HexColor("#E9E9E9"),  # Set the line color to gray
+        fontSize=10, 
+        spaceBefore=16, 
+        spaceAfter=8
+    )
+    subheadline_style = ParagraphStyle(
+        name='Subheadline', 
+        parent=styles['Heading3'], 
+        fontName='Helvetica',
+        textColor= colors.HexColor("#B1B1B1"),  # Set the line color to gray
+        fontSize=10, 
+        spaceBefore=8, 
+        spaceAfter=8
+    )
+
+    pass_style = ParagraphStyle(
+        name='Pass', 
+        parent=styles['BodyText'], 
+        fontSize=10, 
+        textColor= colors.HexColor("#B1B1B1"),  # Set the line color to gray
+        fontName='Helvetica',
+        spaceBefore=8,
+        spaceAfter=8,
+    )
+
+    body_style = ParagraphStyle(
+        name='Pass', 
+        parent=styles['BodyText'], 
+        fontSize=10, 
+        textColor= colors.HexColor("#E9E9E9"),  # Set the line color to gray
+        fontName='Helvetica',
+        spaceBefore=8,
+        spaceAfter=8,
+    )
+
+    body_style_err = ParagraphStyle(
+        name='Pass', 
+        parent=styles['BodyText'], 
+        fontSize=10, 
+        textColor= colors.HexColor("#FFC80F"),  # Set the line color to gray
+        fontName='Helvetica',
+        spaceBefore=8,
+        spaceAfter=8,
+    )
+
+    # Create Table objects for each table and add them to the PDF
+    for i, table_data in enumerate(tables):
+        if table_data:
+            # Treat the first row as a headline
+            headline = table_data[0]
+
+            if "Repetition" in headline[0] or "Formatting_2" in headline[0] or "Missing_value_mandatory" in headline[0] or "Missing_value_optional" in headline[0]:
+                elements.append(PageBreak())  # Add a new page
+            
+            # Check if the second row is a subheadline
+            if len(table_data) > 1 and len(table_data[1]) == 1:
+                subheadline = table_data[1]
+
+                if subheadline == ["PASS"]:
+                    elements.append(Paragraph(" ".join(headline), headline_style))
+                    elements.append(Paragraph(" ".join(subheadline), pass_style))
+                else:
+                    # only error in non total data points or repetition
+                    if "Formatting" in headline[0] and table_data[2] != ["PASS"]:
+                        elements.append(Paragraph(" ".join(headline), error_style))
+                    elif "Duplication" in headline[0]:
+                        elements.append(Paragraph(" ".join(headline), error_style))
+                    else:
+                        elements.append(Paragraph(" ".join(headline), headline_style))
+                        pass
+                    elements.append(Paragraph(" ".join(subheadline), subheadline_style))
+                table_data = table_data[2:]  # Remove headline and subheadline rows
+                
+                # Check if the next line is "pass" and treat it as a subheadline if it is
+                if len(table_data) > 0 and table_data[0] == ["PASS"]:
+                    elements.append(Paragraph(" ".join(table_data[0]), pass_style))
+                    elements.append(Spacer(1, 12))
+                    table_data = table_data[1:]  # Remove the "pass" row
+            else:
+                subheadline = table_data[1]
+                if ("Missing_value_mandatory" in headline[0] or "Duplication" in headline[0] or "Non_discerning_info" in headline[0]) and subheadline != ["PASS"]:
+                    elements.append(Paragraph(" ".join(headline), error_style))
+                else:
+                    # if headline is Missing_value_optional
+                    if "Missing_value_optional" in headline[0]:
+                        # check weather there are any numbers in the table_data
+                        has_numbers = any(isinstance(convert_to_number(cell), (int, float)) for row in table_data for cell in row)
+                        if has_numbers:
+                            elements.append(Paragraph(" ".join(headline), error_style))
+                        else:
+                            elements.append(Paragraph(" ".join(headline), headline_style))
+                    else:
+                        elements.append(Paragraph(" ".join(headline), headline_style))
+                table_data = table_data[1:]  # Remove only the headline row
+            
+            # Create the table without the headline (and subheadline) rows
+            if len(table_data) == 0:
+                draw_line(elements)
+                continue
+
+            # Define padding
+            padding = 48  # Adjust this value as needed
+
+            # Calculate the width of each column
+            page_width = letter[0]  # Width of the letter page size
+            adjusted_page_width = page_width - (2 * padding)  # Subtract padding from both sides
+            num_columns = len(table_data[0])  # Number of columns in the table
+            col_width = adjusted_page_width / num_columns  # Width of each column
+            
+            # Wrap cell content in Paragraphs to enable word wrapping
+            table_data = [[Paragraph(cell, body_style) for cell in row] for row in table_data]
+
+                        # if headline is Missing_value_optional
+            if "Missing_value" in headline[0]:
+                # go trough all values and if value is a number then color it differently
+                for i, row in enumerate(table_data):
+                    for j, cell in enumerate(row):
+                        if isinstance(convert_to_number(cell.getPlainText()), (int, float)):
+                                # table.setStyle(TableStyle([('TEXTCOLOR', (j, i), (j, i), colors.HexColor("#FFC80F"))]))
+                                table_data[i][j] = Paragraph(cell.getPlainText(), body_style_err)
+
+            # Create the table with equal column widths
+            table = Table(table_data, colWidths=[col_width] * num_columns)
+            
+            # Add style to the table
+            style = TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#212223')),
+                ('TEXTCOLOR', (0, 0), (-1, 0), colors.HexColor("#E9E9E9")),
+                ('TEXTCOLOR', (0, 0), (-1, -1), colors.HexColor("#E9E9E9")),
+                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+                
+                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                ('FONTSIZE', (0, 0), (-1, -1), 10),
+                
+                ('BOTTOMPADDING', (0, 0), (-1, 0), 4),
+				('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.HexColor('#131415'), colors.HexColor('#18191A') ]),
+                ('LINEBEFORE', (1, 0), (-1, -1), 1, colors.HexColor('#2F3031')),  # Vertical lines before each column
+
+                ('WORDWRAP', (0, 0), (-1, -1), 'CJK'),  # Enable word wrap for all cells
+            ])
+            table.setStyle(style)
+
+
+            
+            elements.append(table)
+            
+            # if it is repetition add graph
+            if "Repetition" in headline[0]:
+                graph_png_path = find_png_file(f"{FOLDER_PATH}/REPETITION", headline[0])[0]
+                add_graph_image(elements, graph_png_path)
+
+
+            elements.append(Spacer(1, 16))  # Add some space after the line
+            draw_line(elements)
+
+    pdf = SimpleDocTemplate(
+        fname,
+        leftMargin=padding-16,
+        rightMargin=padding-16,
+        topMargin=padding-16,
+        bottomMargin=padding-16
+    )
+
+    # Define a custom PageTemplate with a background color
+    def add_background(canvas, doc):
+        canvas.saveState()
+        canvas.setFillColor(colors.HexColor('#131415'))
+        canvas.rect(0, 0, letter[0], letter[1] + 64, fill=1)
+        canvas.restoreState()
+
+    frame = Frame(pdf.leftMargin, pdf.bottomMargin, pdf.width, pdf.height, id='normal')
+    template = PageTemplate(id='background', frames=frame, onPage=add_background)
+    pdf.addPageTemplates([template])
+    
+    # Build the PDF
+    pdf.build(elements, onFirstPage=add_background, onLaterPages=add_background)
+
+def add_graph_image(elements, path):
+    elements.append(Image(path, width=600, height=400))
+
+def draw_line(elements):
+    # Add a horizontal line after the table
+    elements.append(Spacer(1, 6))  # Add some space after the line
+    # Get the width of the page
+    page_width = letter[0]
+    # Create a line that spans the full width of the page
+    line = Drawing(page_width, 1)
+    gray_line = Line(-64, 0, page_width, 0)  # Set the length of the line to the page width
+    gray_line.strokeColor = colors.HexColor("#2F3031")  # Set the line color to gray
+    line.add(gray_line)
+    elements.append(line)
+    elements.append(Spacer(1, 6))  # Add some space after the line
+
+def find_png_file(folder_path, headline):
+    # Use glob to find all PNG files in the specified folder
+    png_files = glob.glob(os.path.join(folder_path, '*.png'))
+     # Filter the files to find those that contain the headline in their path
+    matching_files = [png_file for png_file in png_files if headline in os.path.basename(png_file)]
+    
+    return matching_files
+
+def convert_to_number(cell):
+    try:
+        # Try to convert to integer
+        return int(cell)
+    except ValueError:
+        try:
+            # If integer conversion fails, try to convert to float
+            return float(cell)
+        except ValueError:
+            # If both conversions fail, return the original string
+            return cell
+save_pdf()
+
+
+# In[51]:
 
 
 def split_files(directory):
@@ -803,7 +1195,7 @@ def split_files(directory):
 split_files(FOLDER_PATH)
 
 
-# In[221]:
+# In[52]:
 
 
 # Only make an archive if zip is True
@@ -813,7 +1205,7 @@ if zip:
     FileLink(filelink)
 
 
-# In[ ]:
+# In[53]:
 
 
 # Column headers
